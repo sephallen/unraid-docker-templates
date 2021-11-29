@@ -22,11 +22,11 @@ VERSION&#xD;
   <Category>Crypto: Tools: Network:Other</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://i.imgur.com/XR7oPkM.png</Icon>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/monero-node_200x200.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1638188218</DateInstalled>
+  <DateInstalled>1638188909</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
