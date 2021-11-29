@@ -23,6 +23,3 @@ For templates that do not exist (yet) within the 'APPS' tab...
 
 If it failed to create the container, check what could be the reason: ports already in use by another container, paths not set correctly, wrong repo or tag, external DB needed (MariaDB, MySQL...), etc.
 ___
-If you appreciate my work, then please consider buying me a beer  :D
-
-[![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JTSH886FD9UM6)
