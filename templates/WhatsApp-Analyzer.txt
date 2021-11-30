@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WhatsApp-Analyzer</Name>
+  <Repository>dineshkarthik/whatsapp-analyzer</Repository>
+  <Registry>https://hub.docker.com/r/dineshkarthik/whatsapp-analyzer</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116627-support-smartphonelover-whatsapp-analyzer/</Support>
+  <Project>https://github.com/Dineshkarthik/Whatsapp-analyzer</Project>
+  <Overview>DESCRIPTION&#xD;
+This is a docker template for WhatsApp Analyzer, a simple analytics and visualization Python app, dashboard powered by Twitter-bootstrap and D3.js.&#xD;
+&#xD;
+WhatsApp Analyzer uses a number of open source projects to work properly:&#xD;
+&#x2022; Flask: microframework for Python based on Werkzeug, Jinja 2&#xD;
+&#x2022; Pandas: pandas is an open source, library providing high-performance, easy-to-use data structures and data analysis tools for the Python&#xD;
+&#x2022; Twitter Bootstrap: great UI boilerplate for modern web apps&#xD;
+&#x2022; D3.js: JavaScript library for manipulating documents based on data, helps you bring data to life using HTML, SVG, and CSS.&#xD;
+&#x2022; jQuery: duh&#xD;
+&#xD;
+Here you can test a live demo:&#xD;
+http://whatsapp-analyzer.herokuapp.com/&#xD;
+&#xD;
+INSTRUCTONS&#xD;
+1&#xBA; Export your WhatsApp conversation(s) to a text file (.txt), without media export.&#xD;
+2&#xBA; Upload it to analyzer via its web interface, and configure the date format.&#xD;
+3&#xBA; All the information will be shown on the dashboard.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; There&#x2019;s no way that it will work for everyone because I&#x2019;ve found that depending on your OS and version of WhatsApp, the format of text file lines varies wildly. I&#x2019;m sorry if it doesn&#x2019;t work for you.&#xD;
+&#x2022; Python 3.6+ is required on the host.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-11-30)</Overview>
+  <Category>Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/whatsapp-analyzer_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638267235</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>- Python 3.6+ (host)</Requires>
+  <Config Name="WebUI" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+</Container>
