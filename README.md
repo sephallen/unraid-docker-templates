@@ -1,6 +1,7 @@
 **Docker Templates**
 
-- Monero-NODE (v1.0)
+- Monero-NODE (v1.0) [2021-11-29]
+- WhatsApp-Analyzer (v1.0) [2021-11-30]
 
 **How To Use Docker Templates?**
 
