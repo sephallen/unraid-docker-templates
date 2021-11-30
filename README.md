@@ -25,4 +25,3 @@ For templates that do not exist (yet) within the 'APPS' tab...
 4. Done!
 
 If it failed to create the container, check what could be the reason: ports already in use by another container, paths not set correctly, wrong repo or tag, external DB needed (MariaDB, MySQL...), etc.
-___
