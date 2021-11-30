@@ -28,7 +28,7 @@ VERSION&#xD;
 v1.0 (2021-11-30)&#xD;
 &#xD;
 IMAGE TAG TEMPORARILY LOCKED AT 6.3.8 UNTIL FIXING SOME BUILDING ERRORS FOR 6.3.11</Overview>
-  <Category>Productivity: Status:Beta</Category>
+  <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/openkm-ce_200x200.png</Icon>
