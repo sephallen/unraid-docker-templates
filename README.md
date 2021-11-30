@@ -1,5 +1,6 @@
 **Docker Templates**
 
+- Mayan-EDMS (v1.0)
 - Monero-NODE (v1.0)
 - OpenKM-CE (v1.0)
 - WhatsApp-Analyzer (v1.0)
