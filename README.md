@@ -1,6 +1,7 @@
 **Docker Templates**
 
 - Monero-NODE (v1.0)
+- OpenKM-CE (v1.0)
 - WhatsApp-Analyzer (v1.0)
 
 **How To Use Docker Templates?**
