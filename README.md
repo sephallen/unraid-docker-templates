@@ -1,5 +1,6 @@
 **Docker Templates**
 
+- Composerize (v1.0)
 - Mayan-EDMS (v1.0)
 - Monero-NODE (v1.0)
 - OpenKM-CE (v1.0)
