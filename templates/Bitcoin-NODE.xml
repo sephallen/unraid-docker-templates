@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Bitcoin-NODE</Name>
+  <Repository>kylemanna/bitcoind</Repository>
+  <Registry>https://hub.docker.com/r/kylemanna/bitcoind</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116673-support-smartphonelover-bitcoin-node/</Support>
+  <Project>https://github.com/kylemanna/docker-bitcoind</Project>
+  <Overview>DESCRIPTION&#xD;
+This docker template will allow you to run a local Bitcoin (BTC) node (bitcoind) on your unRAID server.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; If you are going to expose it to the public to contribute with the network, make sure you ALWAYS use it behind a firewall properly configured.&#xD;
+&#x2022; As having a full node running 24/7 is an intensive task for the storage unit(s) where it will be saved on, it's recommended to install it on a separate disk (HDD/SSD), not on the array.&#xD;
+&#x2022; This container doesn't have a WebUI. You will only need to configure your client to connect to this container, using the format: IP_SERVER:PORT1.&#xD;
+&#x2022; Use the 'bitcoin.conf' file to add extra parameters.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-12-01)</Overview>
+  <Category>Crypto:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/bitcoin-node_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638375305</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port (1)" Target="8332" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8332</Config>
+  <Config Name="Port (2)" Target="8333" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8333</Config>
+  <Config Name="Blockhain (storage)" Target="/bitcoin/.bitcoin" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Bitcoin-NODE</Config>
+</Container>
