@@ -10,7 +10,7 @@
   <Support>https://forums.unraid.net/topic/116683-support-smartphonelover-jellyfin-native-image/</Support>
   <Project>https://github.com/jellyfin/jellyfin</Project>
   <Overview>DESCRIPTION&#xD;
-This is the a docker template, based on the official Jellyfin image (jellyfin/jellyfin), without modifications. Just in case you wanna try it and compare to the other ones available.&#xD;
+This docker template is based on the official Jellyfin image (jellyfin/jellyfin), without modifications. Just in case you wanna try it and compare to the other ones available.&#xD;
 &#xD;
 Jellyfin is the volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached. Your media, your server, your way.&#xD;
 &#xD;
