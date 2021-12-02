@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>LogicalDOC-CE</Name>
+  <Repository>logicaldoc/logicaldoc-ce</Repository>
+  <Registry>https://hub.docker.com/r/logicaldoc/logicaldoc-ce</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116722-support-smartphonelover-logicaldoc-ce-dms/</Support>
+  <Project>https://github.com/logicaldoc/logicaldoc-ce</Project>
+  <Overview>DESCRIPTION&#xD;
+LogicalDOC Community Edition (LogicalDOC CE) is an open-source document management software platform. By leveraging on the best-of-breed Java frameworks, it creates a flexible and powerful document management platform, which thanks to the most advanced presentation technology (Google GWT), is able to meet the needs of usability and more demanding management. LogicalDOC is both document management and collaboration system. The software is loaded with many functions and allows organizing, index, retrieving, controlling and distributing important business documents securely and safely for any organization and individual.&#xD;
+&#xD;
+The design of LogicalDOC is based on best-of-breed Java technologies in order to provide a reliable DMS platform. The main interface is Web-based, no need to install anything else; users can access the system through their browser. LogicalDOC CE is 100% free software, supports all major DBMS and this particular distribution installation can be used with MySQL, MariaDB and PostreSQL.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; The default credentials are: admin/admin (user/pass).&#xD;
+&#x2022; An external database instance (MySQL, MariaDB, PosgreSQL, MSSQL or Oracle) is required to be connected to LogicalDOC.&#xD;
+&#x2022; If you are going to use a different database instance, other than MySQL (MySQL or MariaDB), add the 'DB_ENGINE' variable, and set it accordingly: mysql (default), mssql, oracle or postgres.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-12-02)</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/logicaldoc-ce_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638459888</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>- External DB (MySQL, MariaDB, PosgreSQL, MSSQL or Oracle)</Requires>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Database (host)" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database (port)" Target="DB_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database (user)" Target="DB_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database (pass)" Target="DB_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Directory (config)" Target="/opt/logicaldoc/conf" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/logicaldoc-ce/config</Config>
+  <Config Name="Directory (repository)" Target="/opt/logicaldoc/repository" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/logicaldoc-ce/repository</Config>
+</Container>
