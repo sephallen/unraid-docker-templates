@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Webmail-Pro-PHP</Name>
+  <Repository>afterlogic/docker-webmail-pro</Repository>
+  <Registry>https://hub.docker.com/r/afterlogic/docker-webmail-pro</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116742-support-smartphonelover-webmail-litepro-php-afterlogic/</Support>
+  <Project>https://github.com/afterlogic/docker-webmail-pro</Project>
+  <Overview>DESCRIPTION&#xD;
+Fast and easy-to-use webmail front-end for your existing IMAP mail server, Plesk or cPanel.&#xD;
+&#xD;
+Here you can check a demo version:&#xD;
+https://lite.afterlogic.com/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; On first launch, go to 'ip_host:port/adminpanel' and enter the default credentials: superadmin/-empty- (user/pass). Here you will have to configure all the required things to start working with your mail provider(s).&#xD;
+&#x2022; There's no need to configure an external DB service (integrated), but you can: MySQL/MariaDB.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-12-02)</Overview>
+  <Category>Cloud: Productivity: Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/webmail-pro_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638483181</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+</Container>
