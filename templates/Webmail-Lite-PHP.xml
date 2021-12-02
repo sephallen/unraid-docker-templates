@@ -24,7 +24,7 @@ v1.0 (2021-12-02)</Overview>
   <Category>Cloud: Productivity: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/webmail-lite_200x200.png</Icon>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/webmail-lite-files_200x200.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
