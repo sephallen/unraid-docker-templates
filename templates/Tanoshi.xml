@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tanoshi</Name>
+  <Repository>faldez/tanoshi</Repository>
+  <Registry>https://hub.docker.com/r/faldez/tanoshi</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116775-support-smartphonelover-tanoshi/</Support>
+  <Project>https://github.com/faldez/tanoshi</Project>
+  <Overview>DESCRIPTION&#xD;
+Selfhosted web manga reader.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-12-03)</Overview>
+  <Category>Productivity: MediaApp:Books MediaServer:Books</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/tanoshi_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638542136</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="Directory (config)" Target="/tanoshi" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tanoshi</Config>
+</Container>
