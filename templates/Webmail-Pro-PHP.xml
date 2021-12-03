@@ -18,6 +18,7 @@ https://lite.afterlogic.com/&#xD;
 NOTES&#xD;
 &#x2022; On first launch, go to 'ip_host:port/adminpanel' and enter the default credentials: superadmin/-empty- (user/pass). Here you will have to configure all the required things to start working with your mail provider(s).&#xD;
 &#x2022; There's no need to configure an external DB service (integrated), but you can: MySQL/MariaDB.&#xD;
+&#x2022; The Pro version is just a dockerized installation, so it will still require a licence key to be purchased from the web. (30 days trial period)&#xD;
 &#xD;
 VERSION&#xD;
 v1.0 (2021-12-02)</Overview>
