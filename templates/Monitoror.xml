@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Monitoror</Name>
+  <Repository>monitoror/monitoror</Repository>
+  <Registry>https://hub.docker.com/r/monitoror/monitoror</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116799-support-smartphonelover-monitoror/</Support>
+  <Project>https://github.com/monitoror/monitoror</Project>
+  <Overview>DESCRIPTION&#xD;
+Monitoror is a wallboard monitoring app to monitor server status; monitor CI builds progress or even display critical values.&#xD;
+&#xD;
+Here you can see a live demo:&#xD;
+https://demo.monitoror.com/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Use the 'Directory (config)' path to store the 'config.json' file, so Monitoror can read it directly from the host. You can also use an URL (i.e.: NextCloud) to pass the JSON, using the 'MO_CONFIG' variable.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-12-04)</Overview>
+  <Category>Productivity: Tools: Network:Management Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/monitoror_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638633667</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Directory (config)" Target="/configs" Default="" Mode="ro" Description="Use this path (host) to pass the config.json to the container." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/monitoror/</Config>
+  <Config Name="MO_CONFIG" Target="MO_CONFIG" Default="" Mode="" Description="It can be a path or URL." Type="Variable" Display="advanced" Required="false" Mask="false">/configs/config.json</Config>
+</Container>
