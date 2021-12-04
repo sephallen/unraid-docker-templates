@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Cowyo</Name>
+  <Repository>schollz/cowyo</Repository>
+  <Registry>https://hub.docker.com/r/schollz/cowyo</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116803-support-smartphonelover-cowyo/</Support>
+  <Project>https://github.com/schollz/cowyo</Project>
+  <Overview>DESCRIPTION&#xD;
+cowyo is a self-contained wiki server that makes jotting notes easy and fast. The most important feature here is simplicity. Other features include versioning, page locking, self-destructing messages, encryption, and listifying.&#xD;
+&#xD;
+Here you can see a live demo:&#xD;
+https://cowyo.com/&#xD;
+&#xD;
+VERSION&#xD;
+1.0</Overview>
+  <Category>Cloud: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8050]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/cowyo_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638641164</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8050" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8050</Config>
+  <Config Name="Directory (data)" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/cowyo</Config>
+</Container>
