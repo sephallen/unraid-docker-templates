@@ -3,6 +3,7 @@
 - Aurora-Files (v1.0)
 - Bitcoin-NODE (v1.0)
 - Composerize (v1.0)
+- Cowyo (v1.0)
 - Jellyfin (v1.0)
 - LogicalDOC-CE (v1.0)
 - MailDev (v1.0)
