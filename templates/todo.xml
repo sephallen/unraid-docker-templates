@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>todo</Name>
+  <Repository>prologic/todo</Repository>
+  <Registry>https://hub.docker.com/r/prologic/todo</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/116807-support-smartphonelover-todo/</Support>
+  <Project>https://git.mills.io/prologic/todo</Project>
+  <Overview>DESCRIPTION&#xD;
+todo is a self-hosted todo web app that lets you keep track of your todos in a easy and minimal way.&#xD;
+&#xD;
+Here you have a live demo:&#xD;
+https://todo.mills.io/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Check the GitMillis to fully custimize the appearance using optional variables.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-04)</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/todo_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638662550</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+</Container>
