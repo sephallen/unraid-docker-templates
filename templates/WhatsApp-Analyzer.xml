@@ -32,7 +32,7 @@ NOTES&#xD;
 &#x2022; Python 3.6+ is required on the host.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-11-30)</Overview>
+1.0 (2021-11-30)</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5000]</WebUI>
   <TemplateURL/>
