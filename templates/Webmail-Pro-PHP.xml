@@ -21,7 +21,7 @@ NOTES&#xD;
 &#x2022; The Pro version is just a dockerized installation, so it will still require a licence key to be purchased from the web. (30 days trial period)&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-02)</Overview>
+1.0 (2021-12-02)</Overview>
   <Category>Cloud: Productivity: Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
