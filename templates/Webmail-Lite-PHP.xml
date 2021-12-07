@@ -20,7 +20,7 @@ NOTES&#xD;
 &#x2022; There's no need to configure an external DB service (integrated), but you can: MySQL/MariaDB.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-02)</Overview>
+1.0 (2021-12-02)</Overview>
   <Category>Cloud: Productivity: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
