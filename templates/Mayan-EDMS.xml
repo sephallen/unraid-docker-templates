@@ -19,7 +19,7 @@ NOTES&#xD;
 &#x2022; The default credentials are auto-generated when the container gets built. Just open WebUI and you will see them up.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-01)</Overview>
+1.0 (2021-12-01)</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <TemplateURL/>
