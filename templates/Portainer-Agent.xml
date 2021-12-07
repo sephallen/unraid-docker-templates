@@ -16,7 +16,7 @@ NOTES&#xD;
 &#x2022; To connect the Agent to Portainer, you will need to add the Agent to the Endpoints of Portainer first. (check Support Thread for more information)&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-06)</Overview>
+1.0 (2021-12-06)</Overview>
   <Category>Tools: Network:Management</Category>
   <WebUI/>
   <TemplateURL/>
