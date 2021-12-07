@@ -13,7 +13,7 @@
 Selfhosted web manga reader.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-03)</Overview>
+1.0 (2021-12-03)</Overview>
   <Category>Productivity: MediaApp:Books MediaServer:Books</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
