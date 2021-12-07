@@ -20,7 +20,7 @@ NOTES&#xD;
 &#x2022; If you are going to use a different database instance, other than MySQL (MySQL or MariaDB), add the 'DB_ENGINE' variable, and set it accordingly: mysql (default), mssql, oracle or postgres.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-02)</Overview>
+1.0 (2021-12-02)</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
