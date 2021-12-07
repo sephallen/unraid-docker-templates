@@ -25,7 +25,7 @@ NOTES&#xD;
 &#x2022; The '/HOST_SWAP' directory is mapped to the internal storage of the container to allow communication between the container and the host. It will be usefull in case of exporting repo (zip) or any file from within the platform, to the host. (optional field)&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-11-30)&#xD;
+1.0 (2021-11-30)&#xD;
 &#xD;
 IMAGE TAG TEMPORARILY LOCKED AT 6.3.8 UNTIL FIXING SOME BUILDING ERRORS FOR 6.3.11</Overview>
   <Category>Productivity:</Category>
