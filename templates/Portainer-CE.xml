@@ -16,7 +16,7 @@ NOTES&#xD;
 &#x2022; If you would like to extend the capabilities of Portainer, getting extra features over containers, networks, volumes and images, you will need to install the Portainer Agent separately. Search for 'Portainer-Agent' from my docker templates.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-06)</Overview>
+1.0 (2021-12-06)</Overview>
   <Category>Tools: Network:Management</Category>
   <WebUI>http://[IP]:[PORT:9000]</WebUI>
   <TemplateURL/>
