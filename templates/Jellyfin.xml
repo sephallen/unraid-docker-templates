@@ -22,7 +22,7 @@ NOTES&#xD;
 &#x2022; There are no predefined library paths that must be set to allow Jellyfin to detect media content, and there's no limit for the number of them. The user can create as many paths as libraries it could have to best organize the media.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-01)</Overview>
+1.0 (2021-12-01)</Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <TemplateURL/>
