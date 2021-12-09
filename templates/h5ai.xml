@@ -19,18 +19,18 @@ VERSION&#xD;
 1.0 (2021-12-09)</Overview>
   <Category>Cloud: Network:FTP</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/h5ai.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/h5ai_200x200.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639055116</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1639064172</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
-  <Config Name="Directory (storage)" Target="/h5ai" Default="" Mode="rw" Description="This is where the shared files are located." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Directory (config)" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/h5ai</Config>
+  <Config Name="Directory (storage)" Target="/h5ai" Default="" Mode="ro" Description="This is where the shared files are located." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Directory (config)" Target="/config" Default="/mnt/user/appdata/h5ai" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/h5ai</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">911</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">911</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
