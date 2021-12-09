@@ -18,7 +18,7 @@ NOTES&#xD;
 &#x2022; Web links (external sites) are not working within the container.&#xD;
 &#xD;
 VERSION&#xD;
-1.1 (2021-12-09)</Overview>
+1.2 (2021-12-09)</Overview>
   <Category>Backup: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/Vorta.xml</TemplateURL>
@@ -26,13 +26,13 @@ VERSION&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1639060295</DateInstalled>
+  <DateInstalled>1639087656</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="5800" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
-  <Config Name="Directory (backups)" Target="/locations/backup" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Directory (source)" Target="/locations/source" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Directory (config)" Target="/config" Default="/mnt/user/appdata/Vorta" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/Vorta</Config>
+  <Config Name="Directory (source)" Target="/locations/FROM" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Directory (backups)" Target="/locations/TO" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Directory (config)" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/vorta</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
 </Container>
