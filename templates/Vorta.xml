@@ -31,8 +31,8 @@ VERSION&#xD;
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="5800" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
-  <Config Name="Directory (source)" Target="/locations/FROM" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Directory (backups)" Target="/locations/TO" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups (from)" Target="/locations/FROM" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups (to)" Target="/locations/TO" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Directory (config)" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/vorta</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
 </Container>
