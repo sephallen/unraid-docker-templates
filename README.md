@@ -4,6 +4,7 @@
 - Bitcoin-NODE (v1.0)
 - Composerize (v1.0)
 - Cowyo (v1.0)
+- Gokapi (v1.0)
 - h5ai (v1.0)
 - Jellyfin (v1.0)
 - LogicalDOC-CE (v1.0)
