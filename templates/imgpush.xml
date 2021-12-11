@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>imgpush</Name>
+  <Repository>hauxir/imgpush</Repository>
+  <Registry>https://hub.docker.com/r/hauxir/imgpush</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117124-support-smartphonelover-imgpush/</Support>
+  <Project>https://github.com/hauxir/imgpush</Project>
+  <Overview>DESCRIPTION&#xD;
+Minimalist Self-hosted Image Service for user submitted images in your app (e.g. avatars).&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; To know more about the variables you can use to fully customize how it works, check the GitHub repo.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-11)&#xD;
+&#xD;
+THE SOURCE CODE CONTAINS SOME MINOR ERRORS (CHECK GITHUB ISSUES)</Overview>
+  <Category>Cloud: Tools: MediaServer:Photos Network:Web Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/imgpush_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639266409</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="Storage (images)" Target="/images" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/imgpush/images</Config>
+  <Config Name="Storage (cache)" Target="/cache" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/imgpush/cache</Config>
+</Container>
