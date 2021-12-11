@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Gokapi</Name>
+  <Repository>f0rc3/gokapi</Repository>
+  <Registry>https://hub.docker.com/r/f0rc3/gokapi</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117122-support-smartphonelover-gokapi/</Support>
+  <Project>https://github.com/Forceu/gokapi</Project>
+  <Overview>DESCRIPTION&#xD;
+Gokapi is a lightweight server to share files, which expire after a set amount of downloads or days. It is similar to the discontinued Firefox Send, with the difference that only the admin is allowed to upload files.&#xD;
+&#xD;
+This enables companies or individuals to share their files very easily and having them removed afterwards, therefore saving disk space and having control over who downloads the file from the server.&#xD;
+&#xD;
+Identical files will be deduplicated. An API is available to interact with Gokapi. AWS S3 and Backblaze B2 can be used instead of local storage. Customization is very easy with HTML/CSS knowledge.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Default credentials: unraid/unraid (user/pass).&#xD;
+&#x2022; After building the container, check logs for details about how to log-in.&#xD;
+&#x2022; To know more about the available variables that you can use, check the documentation.&#xD;
+&#x2022; If you want to update the container settings (variables) after creation, you will need to edit the config file manually. (only applicable for persistent variables)&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-11)</Overview>
+  <Category>Cloud: Tools: Network:Web Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:53842]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/gokapi_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639263100</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="53842" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">53842</Config>
+  <Config Name="Directory (config)" Target="/app/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gokapi/config</Config>
+  <Config Name="Directory (data)" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gokapi/data</Config>
+  <Config Name="GOKAPI_USERNAME" Target="GOKAPI_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">unraid</Config>
+  <Config Name="GOKAPI_PASSWORD" Target="GOKAPI_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">unraid</Config>
+  <Config Name="GOKAPI_LENGTH_ID" Target="GOKAPI_LENGTH_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">10</Config>
+  <Config Name="GOKAPI_MAX_FILESIZE" Target="GOKAPI_MAX_FILESIZE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">5</Config>
+</Container>
