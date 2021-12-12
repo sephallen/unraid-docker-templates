@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FileShelter</Name>
+  <Repository>epoupon/fileshelter</Repository>
+  <Registry>https://hub.docker.com/r/epoupon/fileshelter</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117126-support-smartphonelover-fileshelter/</Support>
+  <Project>https://github.com/epoupon/fileshelter</Project>
+  <Overview>DESCRIPTION&#xD;
+FileShelter is a self-hosted software that allows you to easily share files over the Internet. Just upload one or more files and get an URL back!&#xD;
+&#xD;
+Here you have a live demo:&#xD;
+http://fileshelter.demo.poupon.io/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; FileShelter uses a default configuration file, located in '/etc/fileshelter.conf', but you can overwrite it by mapping it on your host: '/path/to/my/fileshelter.conf' (host) and 'target=/etc/fileshelter.conf' (container).&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-11)</Overview>
+  <Category>Cloud: Tools: Network:Web Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:5091]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/fileshelter_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639268443</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="5091" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5091</Config>
+</Container>
