@@ -9,6 +9,7 @@
 - h5ai (v1.0)
 - imgpush (v1.0)
 - Jellyfin (v1.0)
+- VLMCSD-KMS-Server (v1.0)
 - LogicalDOC-CE (v1.0)
 - MailDev (v1.0)
 - Mayan-EDMS (v1.0)
