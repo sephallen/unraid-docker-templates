@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WireGuard-Easy</Name>
+  <Repository>weejewel/wg-easy</Repository>
+  <Registry>https://hub.docker.com/r/weejewel/wg-easy</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://forums.unraid.net/topic/117195-support-smartphonelover-wireguard-easy/</Support>
+  <Project>https://github.com/WeeJeWel/wg-easy</Project>
+  <Overview>DESCRIPTION&#xD;
+You have found the easiest way to install &amp;amp; manage WireGuard on any Linux host!&#xD;
+&#xD;
+Features:&#xD;
+&#x2022; All-in-one: WireGuard + Web UI&#xD;
+&#x2022; Easy installation, simple to use&#xD;
+&#x2022; List, create, edit, delete, enable &amp;amp; disable clients&#xD;
+&#x2022; Show a client's QR code&#xD;
+&#x2022; Download a client's configuration file&#xD;
+&#x2022; Statistics for which clients are connected&#xD;
+&#x2022; Gravatar support&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; It's just an alternative way to install WireGuard.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2021-12-13)</Overview>
+  <Category>Security: Tools: Network:Web Network:DNS Network:Proxy Network:Management Network:VPN</Category>
+  <WebUI>http://[IP]:[PORT:51821]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/wireguard-easy_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639390554</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port (WebUI)" Target="51821" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">51821</Config>
+  <Config Name="Port (VPN)" Target="51820" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">51820</Config>
+  <Config Name="WG_HOST" Target="WG_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="App's Data" Target="/etc/wireguard" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/wireguard-easy</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="WebUI password" Type="Variable" Display="advanced" Required="false" Mask="false">unraid</Config>
+</Container>
