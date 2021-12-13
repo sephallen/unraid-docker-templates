@@ -5,6 +5,7 @@
 - Composerize (v1.0)
 - Cowyo (v1.0)
 - FileShelter (v1.0)
+- Gerbera (v1.0)
 - Gokapi (v1.0)
 - h5ai (v1.0)
 - imgpush (v1.0)
