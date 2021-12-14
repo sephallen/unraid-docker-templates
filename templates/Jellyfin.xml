@@ -22,7 +22,7 @@ NOTES&#xD;
 &#x2022; There are no predefined library paths that must be set to allow Jellyfin to detect media content, and there's no limit for the number of them. The user can create as many paths as libraries it could have to best organize the media.&#xD;
 &#xD;
 VERSION&#xD;
-1.0 (2021-12-01)</Overview>
+1.1 (2021-12-14)</Overview>
   <Category>MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:8096]/</WebUI>
   <TemplateURL/>
@@ -39,8 +39,8 @@ VERSION&#xD;
   <Config Name="Library (movies)" Target="/JF_MOVIES" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Library (series)" Target="/JF_SERIES" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Library (music)" Target="/JF_MUSIC" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Directory (cahe)" Target="/cache" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/jellyfin-2/cache</Config>
-  <Config Name="Directory (config)" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/jellyfin-2/config</Config>
+  <Config Name="Directory (cahe)" Target="/cache" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/jellyfin/cache</Config>
+  <Config Name="Directory (config)" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/jellyfin/config</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
 </Container>
