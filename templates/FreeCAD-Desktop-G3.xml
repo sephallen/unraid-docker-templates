@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FreeCAD-Desktop-G3</Name>
+  <Repository>accetto/ubuntu-vnc-xfce-freecad-g3</Repository>
+  <Registry>https://hub.docker.com/r/accetto/ubuntu-vnc-xfce-freecad-g3</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117223-support-smartphonelover-xfce-headless-containerized-apps-collection/</Support>
+  <Project>https://github.com/accetto/headless-drawing-g3/</Project>
+  <Overview>DESCRIPTION&#xD;
+Headless Ubuntu/Xfce container with VNC/noVNC and FreeCAD.&#xD;
+This is a docker template based on latest Ubuntu LTS with Xfce desktop environment, VNC/noVNC servers for headless use and the free open-source 3D parametric modeler FreeCAD.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; The default credentials are: no_user/unraid (user/pass). These credentials are also used for the root user within the container (OS).&#xD;
+&#x2022; To be able to work with files located on your host, and viceversa, configure the 'Internal Share' path on this template. You can also map internal '/home/user/*' directories to your host.&#xD;
+&#x2022; The are two noVNC clients - lite client and full client. Because the connection URL differs slightly in both cases, the container provides a simple startup page.&#xD;
+&#x2022; If you want to try the apps based on other OS versions (olders), check the Gen 1 and Gen 2 GitHub repos, so you can build the docker templates for the version you want.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-14)</Overview>
+  <Category>Productivity: Tools: MediaApp:Photos</Category>
+  <WebUI>http://[IP]:[PORT:6901]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/freecad_200x200.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639476035</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI (VNC)" Target="5901" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5901</Config>
+  <Config Name="WebUI (noVNC)" Target="6901" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6901</Config>
+  <Config Name="Internal Share" Target="/UNRAID_SHARE" Default="" Mode="rw" Description="Path to a share from your host to be able to work within the container." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="VNC_PW" Target="VNC_PW" Default="" Mode="" Description="The VNC/noVNC password." Type="Variable" Display="advanced" Required="false" Mask="false">unraid</Config>
+  <Config Name="VNC_RESOLUTION" Target="VNC_RESOLUTION" Default="" Mode="" Description="The VNC/noVNC resolution." Type="Variable" Display="advanced" Required="false" Mask="false">1360x768</Config>
+</Container>
