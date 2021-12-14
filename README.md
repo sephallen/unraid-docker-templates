@@ -9,7 +9,7 @@
 - Gokapi (v1.0)
 - h5ai (v1.0)
 - imgpush (v1.0)
-- Jellyfin (v1.0)
+- Jellyfin (v1.1)
 - VLMCSD-KMS-Server (v1.0)
 - LogicalDOC-CE (v1.0)
 - MailDev (v1.0)
