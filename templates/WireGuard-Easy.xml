@@ -22,10 +22,11 @@ Features:&#xD;
 &#x2022; Gravatar support&#xD;
 &#xD;
 NOTES&#xD;
+&#x2022; The default credentials: empty/unraid (user/pass).&#xD;
 &#x2022; It's just an alternative way to install WireGuard.&#xD;
 &#xD;
 VERSION&#xD;
-v1.0 (2021-12-13)</Overview>
+v1.1 (2021-12-14)</Overview>
   <Category>Security: Tools: Network:Web Network:DNS Network:Proxy Network:Management Network:VPN</Category>
   <WebUI>http://[IP]:[PORT:51821]</WebUI>
   <TemplateURL/>
