@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>YouTube-DL</Name>
+  <Repository>jeeaaasustest/youtube-dl</Repository>
+  <Registry>https://hub.docker.com/r/jeeaaasustest/youtube-dl/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117324-support-smartphonelover-youtube-dl-for-subscriptions/</Support>
+  <Project>https://github.com/Jeeaaasus/youtube-dl</Project>
+  <Overview>DESCRIPTION&#xD;
+This ia a docker template for YouTube-DL (yt-dlp) for downloading YouTube subscriptions.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Check the GitHub repo to know more about how to configure the variables used in this template.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-15)</Overview>
+  <Category>Downloaders: Tools: MediaApp:Video MediaServer:Video</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/youtube-dl.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639584138</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8013</Config>
+  <Config Name="Storage (media)" Target="/downloads" Default="" Mode="rw" Description="This is where YouTube-DL will download all videos." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="App's Data" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/youtube-dl</Config>
+  <Config Name="youtubedl_webui" Target="youtubedl_webui" Default="" Mode="" Description="Enable WebUI interface (true/false)" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">911</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">911</Config>
+  <Config Name="youtubedl_interval" Target="youtubedl_interval" Default="" Mode="" Description="To customize the download interval (1h,3h,12h,3d)." Type="Variable" Display="advanced" Required="false" Mask="false">12h</Config>
+  <Config Name="youtubedl_quality" Target="youtubedl_quality" Default="" Mode="" Description="To customize the download quality (720,1080,1440,2160)." Type="Variable" Display="advanced" Required="false" Mask="false">1080p</Config>
+</Container>
