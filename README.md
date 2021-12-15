@@ -34,6 +34,7 @@
 - Webmail-Pro-PHP (v1.0)
 - WhatsApp-Analyzer (v1.0)
 - WireGuard-Easy (v1.0)
+- YouTube-DL (v1.0)
 
 **How To Use Docker Templates?**
 
