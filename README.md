@@ -26,6 +26,7 @@
 - OpenKM-CE (v1.0)
 - Portainer-Agent (v1.0)
 - Portainer-CE (v1.0)
+- Sharry (v1.0)
 - Simply-Shorten (v1.0)
 - Tanoshi (v1.0)
 - Todo (v1.0)
