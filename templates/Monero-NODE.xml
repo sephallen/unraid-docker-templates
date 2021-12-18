@@ -15,7 +15,7 @@ This docker template will allow you to run a local Monero (XMR) node on your unR
 NOTES&#xD;
 &#x2022; If you are going to expose it to the public to contribute with the network, make sure you ALWAYS use it behind a firewall properly configured.&#xD;
 &#x2022; As having a full node running 24/7 is an intensive task for the storage unit(s) where it will be saved on, it's recommended to install it on a separate disk (HDD/SSD), not on the array.&#xD;
-&#x2022; This container doesn't have a WebUI. You will only need to configure your client to connect to this container, using the format: IP_SERVER:PORT1.&#xD;
+&#x2022; This container doesn't have a WebUI. You will only need to configure your client to connect to this container, using the format: IP_SERVER:PORT2.&#xD;
 &#xD;
 VERSION&#xD;
 1.0 (2021-11-29)</Overview>
