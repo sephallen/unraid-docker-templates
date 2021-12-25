@@ -7,6 +7,7 @@
 - Composerize (v1.0)
 - Cowyo (v1.0)
 - Cryptgeon (v1.0)
+- Docker-Hub-RSS (v1.0)
 - FileShelter (v1.0)
 - Firefox-Desktop-G3 (v1.0)
 - FreeCAD-Desktop-G3 (v1.0)
