@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Docker-Hub-RSS</Name>
+  <Repository>theconnman/docker-hub-rss</Repository>
+  <Registry>https://hub.docker.com/r/theconnman/docker-hub-rss</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117663-support-smartphonelover-docker-hub-rss/</Support>
+  <Project>https://github.com/TheConnMan/docker-hub-rss</Project>
+  <Overview>DESCRIPTION&#xD;
+RSS feed for Docker Hub images&#xD;
+&#xD;
+Docker Hub doesn't provide notifications for new image releases, so Docker Hub RSS turns image tags into an RSS feed for easy consumption. Subscribe using Slack RSS, Feedly, or any other RSS feed reader to get notified when a new image is published.&#xD;
+&#xD;
+Live demo:&#xD;
+https://docker-hub-rss-theconnman.vercel.app/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; To generate new RSS feeds just fill-in all the decided text fields and click on 'Preview Feed'. Then, you can register them on your RSS reader. (As a reference, I like to use FreshRSS as a docker container, then connect FocusReader from Android)&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-25)</Overview>
+  <Category>Cloud: Tools: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/docker-hub-rss.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1640431569</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+</Container>
