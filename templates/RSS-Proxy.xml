@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RSS-Proxy</Name>
+  <Repository>damoeb/rss-proxy</Repository>
+  <Registry>https://hub.docker.com/r/damoeb/rss-proxy</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/117665-support-smartphonelover-rss-proxy/</Support>
+  <Project>https://github.com/damoeb/rss-proxy</Project>
+  <Overview>DESCRIPTION&#xD;
+RSS-Proxy is a tool that allows you to do create an RSS/ATOM or JSON feed of almost any website (RSS-Bridge alternative), purely by analyzing just the static HTML structure.&#xD;
+&#xD;
+Live demo:&#xD;
+https://rssproxy-v1.migor.org/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; If you want support for dynamic webapps, use the 'damoeb/rss-proxy:js' image instead.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2021-12-25)</Overview>
+  <Category>Cloud: Tools: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/rss-proxy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1640435795</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+</Container>
