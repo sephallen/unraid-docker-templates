@@ -34,6 +34,7 @@
 - Tanoshi (v1.0)
 - Todo (v1.0)
 - Vorta (v1.2)
+- Vorta2 (v1.0)
 - Webmail-Lite-PHP (v1.0)
 - Webmail-Pro-PHP (v1.0)
 - WhatsApp-Analyzer (v1.0)
