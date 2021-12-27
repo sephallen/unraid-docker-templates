@@ -13,7 +13,7 @@
 This is a docker template for Vorta (GUI for Borg Backup), a backup client for macOS and Linux desktops. It integrates the mighty BorgBackup with your desktop environment to protect your data from disk failure, ransomware and theft.&#xD;
 &#xD;
 NOTES&#xD;
-&#x2022; This image is based on Vorta 0.6.26 and Borg 1.1.11.&#xD;
+&#x2022; The scumburg's image (Vorta: template) is based on Vorta 0.6.26 and Borg 1.1.11 (deprecated), and marklambert's image (Vorta2: template) is based on Vorta 0.8.2 and Borg 1.1.17 (latest).&#xD;
 &#x2022; Borg cache is located in '/config/xdg/cache/borg'.&#xD;
 &#x2022; Web links (external sites) are not working within the container.&#xD;
 &#xD;
