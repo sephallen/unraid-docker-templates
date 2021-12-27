@@ -18,21 +18,23 @@ NOTES&#xD;
 &#x2022; Web links (external sites) are not working within the container.&#xD;
 &#xD;
 VERSION&#xD;
-1.0 (2021-12-27)</Overview>
+1.1 (2021-12-27)</Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/Vorta2.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/vorta_200x200.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1640623050</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1640644089</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="5800" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
   <Config Name="Backups (from)" Target="/locations/FROM" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Backups (to)" Target="/locations/TO" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Directory (config)" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/vorta2</Config>
+  <Config Name="Directory (config)" Target="/config" Default="/mnt/user/appdata/Vorta2" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/vorta2</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
+  <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="Default: 1028" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="" Mode="" Description="Default: 100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
 </Container>
