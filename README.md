@@ -24,6 +24,7 @@
 - Mayan-EDMS (v1.0)
 - Monero-NODE (v1.0)
 - Monitoror (v1.0)
+- OpenBooks (v1.0)
 - OpenGL-Desktop-G3 (v1.0)
 - OpenKM-CE (v1.0)
 - Portainer-Agent (v1.0)
