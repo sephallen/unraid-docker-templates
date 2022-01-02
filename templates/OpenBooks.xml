@@ -13,7 +13,7 @@
 Openbooks allows you to download ebooks from irc.irchighway.net quickly and easily.&#xD;
 &#xD;
 NOTES&#xD;
-&#x2022; If you want to set a custom name when connecting to irchighway (recommend), add the following into the 'Post Arguments' field: --name user_name.&#xD;
+&#x2022; If you want to set a custom name when connecting to irchighway (recommended), add the following into the 'Post Arguments' field: --name user_name.&#xD;
 &#x2022; The minimum limit is 1 search per 10 seconds but this can be configured for a higher value via the '--rate-limit' flag within 'Post Arguments' field.&#xD;
 &#xD;
 VERSION&#xD;
