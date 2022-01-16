@@ -40,7 +40,7 @@ VERSION&#xD;
   <Category>Productivity: Tools: MediaApp:Photos MediaServer:Photos</Category>
   <WebUI>http://[IP]:[PORT:4000]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/photostream.png</Icon>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/photo-stream.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
