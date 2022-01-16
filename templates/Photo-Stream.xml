@@ -34,6 +34,7 @@ https://rafa.photo/&#xD;
 &#xD;
 NOTES&#xD;
 &#x2022; To customize its variables go to here: https://github.com/waschinski/photo-stream#customize.&#xD;
+&#x2022; Try not to add pictures (files) with very long filenames (i.e.: 10312670_1437325909908866_8181083286325937099.jpg), because it was causing problems with some users.&#xD;
 &#xD;
 VERSION&#xD;
 1.0 (2022-01-16)</Overview>
