@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Photo-Stream</Name>
+  <Repository>waschinski/photo-stream</Repository>
+  <Registry>https://hub.docker.com/r/waschinski/photo-stream</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/118671-support-smartphonelover-photo-stream/</Support>
+  <Project>https://github.com/waschinski/photo-stream</Project>
+  <Overview>DESCRIPTION&#xD;
+Photo Stream is a simpler home for your photos initially created by @maxvoltar and now maintained by @waschinski and friends. Easy to use, self hosted, no tracking, just photos.&#xD;
+&#xD;
+Some of the features:&#xD;
+- Lazy loading&#xD;
+- Only load larger resolutions when needed (to save on bandwidth)&#xD;
+- Photo tints&#xD;
+- Keyboard shortcuts&#xD;
+- Unique URL's for photos&#xD;
+- RSS feed (Which you can plug into IFTTT and set up auto-posting to most social networks, like @maxvoltar has done here. Make sure you select "Post a tweet with image" when setting it up to embed the photo.)&#xD;
+- Drag, drop, commit workflow (learn more about how to add photos to your stream)&#xD;
+- Optimized light and dark themes (auto-enabled depending on your OS preferences)&#xD;
+- Optional: Links to your social networks&#xD;
+&#xD;
+Live demo:&#xD;
+https://floremotion.de/&#xD;
+https://joeyabanks.photo/&#xD;
+https://photos.alexbaldwin.com/&#xD;
+https://jad.photos/&#xD;
+https://photo.silvandaehn.com/&#xD;
+https://chriszeta.it/&#xD;
+https://rafa.photo/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; To customize its variables go to here: https://github.com/waschinski/photo-stream#customize.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-16)</Overview>
+  <Category>Productivity: Tools: MediaApp:Photos MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:4000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/photostream.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1642355513</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="4000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4000</Config>
+  <Config Name="Storage (images)" Target="/photo-stream/photos/original" Default="" Mode="rw" Description="Location for original files (photos)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="TITLE" Target="TITLE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Photo Stream for unRAID</Config>
+  <Config Name="AUTHOR_NAME" Target="AUTHOR_NAME" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">unRAID</Config>
+  <Config Name="DESCRIPTION" Target="DESCRIPTION" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">My unRAID Photo Stream collection.</Config>
+  <Config Name="SHOW_OFFICIAL_GITHUB" Target="SHOW_OFFICIAL_GITHUB" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+</Container>
