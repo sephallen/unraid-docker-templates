@@ -1,5 +1,6 @@
 **Docker Templates**
 
+- 2FAuth (v1.0)
 - Aurora-Files (v1.0)
 - Bitcoin-NODE (v1.0)
 - Blender-Desktop-G3 (v1.0)
