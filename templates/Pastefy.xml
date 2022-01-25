@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Pastefy</Name>
+  <Repository>interaapps/pastefy</Repository>
+  <Registry>https://hub.docker.com/r/interaapps/pastefy</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119089-support-smartphonelover-pastefy/</Support>
+  <Project>https://github.com/interaapps/pastefy</Project>
+  <Overview>DESCRIPTION&#xD;
+Pastefy is an open source alternative to Gists or Pastebin.&#xD;
+You want to share some code to your friends or just save it for yourself? Just paste it.&#xD;
+&#xD;
+Features:&#xD;
+&#x2022; Raw-Preview&#xD;
+&#x2022; Copy Button&#xD;
+&#x2022; Fork&#xD;
+&#x2022; An API available&#xD;
+&#x2022; Log in&#xD;
+&#x2022; Folders&#xD;
+&#x2022; See your created pastes&#xD;
+&#x2022; Delete created pastes&#xD;
+&#x2022; Create paste with 'curl -F f=@file.txt pastefy.ga'&#xD;
+&#xD;
+Live demo:&#xD;
+https://pastefy.ga/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; MySQL database linked to this container is required.&#xD;
+&#x2022; You can know more about all the available variables, check the file '.env.example' in the root of GitHub branch.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-25)</Overview>
+  <Category>Cloud: Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/pastefy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643123538</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>MySQL</Requires>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9999</Config>
+  <Config Name="HTTP_SERVER_CORS" Target="HTTP_SERVER_CORS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">"*"</Config>
+  <Config Name="DATABASE_DRIVER" Target="DATABASE_DRIVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
+  <Config Name="DATABASE_NAME" Target="DATABASE_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pastefy</Config>
+  <Config Name="DATABASE_USER" Target="DATABASE_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pastefy</Config>
+  <Config Name="DATABASE_PASSWORD" Target="DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pastefy</Config>
+  <Config Name="DATABASE_HOST" Target="DATABASE_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.120</Config>
+  <Config Name="DATABASE_PORT" Target="DATABASE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="AUTH_PROVIDER" Target="AUTH_PROVIDER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">NONE</Config>
+</Container>

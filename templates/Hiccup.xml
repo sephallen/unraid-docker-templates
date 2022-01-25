@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Hiccup</Name>
+  <Repository>bleckbeard/hiccup</Repository>
+  <Registry>https://hub.docker.com/r/bleckbeard/hiccup</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119084-support-smartphonelover-hiccup/</Support>
+  <Project>https://github.com/ashwin-pc/hiccup</Project>
+  <Overview>DESCRIPTION&#xD;
+A static start page to get to your most important links, FAST. You can use this for your home server, new tab using browser extentions, use the demo page directly or basically anywhere you can server a static webpage from!&#xD;
+&#xD;
+Features:&#xD;
+&#x2022; Static Webpage&#xD;
+&#x2022; Featured Links&#xD;
+&#x2022; Categories&#xD;
+&#x2022; Quick link preview&#xD;
+&#x2022; Search (with search provider and tag support)&#xD;
+&#x2022; Local Config management&#xD;
+&#x2022; PWA support&#xD;
+&#x2022; Keyboard shortcuts&#xD;
+&#x2022; Full keyboard navigation support&#xD;
+&#xD;
+Live demo:&#xD;
+https://designedbyashw.in/test/hiccup/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds using the unRAID's Terminal, before creating the container: 'mkdir -m755 /mnt/user/appdata/hiccup' and 'curl https://raw.githubusercontent.com/ashwin-pc/hiccup/master/public/config.json --output /mnt/user/appdata/hiccup/config.json'.&#xD;
+&#x2022; The startpage uses a 'config.json' file (/.../appdata/hiccupt/config.json) as the source of truth for page. It can be modified locally but the result will only be saved on the browsers localStorage and persist across sessions.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-25)</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/hiccup.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643111860</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8899</Config>
+  <Config Name="Storage (config file)" Target="/usr/share/nginx/html/config.json" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/hiccup/config.json</Config>
+</Container>
