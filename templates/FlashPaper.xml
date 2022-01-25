@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FlashPaper</Name>
+  <Repository>andrewpaglusch/flashpaper</Repository>
+  <Registry>https://hub.docker.com/r/andrewpaglusch/flashpaper</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119110-support-smartphonelover-flashpaper-self-destructing-message/</Support>
+  <Project>https://github.com/AndrewPaglusch/FlashPaper</Project>
+  <Overview>DESCRIPTION&#xD;
+A one-time encrypted zero-knowledge password/secret sharing application focused on simplicity and security. No database or complicated set-up required.&#xD;
+&#xD;
+Live demo:&#xD;
+https://flashpaper.io/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; You can use it locally, but a warning message will persists on the main page telling you that an HTTP(S) connection is required to use the service, so that the waning message can disappear.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-26)</Overview>
+  <Category>Cloud: Productivity: Security: Tools: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/flashpaper.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643152433</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8544</Config>
+  <Config Name="Storage (data)" Target="/var/www/html/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/flashpaper</Config>
+  <Config Name="SITE_TITLE" Target="SITE_TITLE" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">FlashPaper - Self-Destructing Message</Config>
+  <Config Name="RETURN_FULL_URL" Target="RETURN_FULL_URL" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="MAX_SECRET_LENGTH" Target="MAX_SECRET_LENGTH" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">3000</Config>
+  <Config Name="ANNOUNCEMENT" Target="ANNOUNCEMENT" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="MESSAGES_ERROR_SECRET_TOO_LONG" Target="MESSAGES_ERROR_SECRET_TOO_LONG" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Input length too long</Config>
+  <Config Name="MESSAGES_SUBMIT_SECRET_HEADER" Target="MESSAGES_SUBMIT_SECRET_HEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Create A Self-Destructing Message</Config>
+  <Config Name="MESSAGES_SUBMIT_SECRET_SUBHEADER" Target="MESSAGES_SUBMIT_SECRET_SUBHEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="MESSAGES_SUBMIT_SECRET_BUTTON" Target="MESSAGES_SUBMIT_SECRET_BUTTON" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Encrypt Message</Config>
+  <Config Name="MESSAGES_VIEW_CODE_HEADER" Target="MESSAGES_VIEW_CODE_HEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Self-Destructing URL</Config>
+  <Config Name="MESSAGES_VIEW_CODE_SUBHEADER" Target="MESSAGES_VIEW_CODE_SUBHEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Share this URL via email, chat, or another messaging service. It will self-destruct after being viewed once.</Config>
+  <Config Name="MESSAGES_CONFIRM_VIEW_SECRET_HEADER" Target="MESSAGES_CONFIRM_VIEW_SECRET_HEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">View this secret?</Config>
+  <Config Name="MESSAGES_CONFIRM_VIEW_SECRET_BUTTON" Target="MESSAGES_CONFIRM_VIEW_SECRET_BUTTON" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">View Secret</Config>
+  <Config Name="MESSAGES_VIEW_SECRET_HEADER" Target="MESSAGES_VIEW_SECRET_HEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Self-Destructing Message</Config>
+  <Config Name="MESSAGES_VIEW_SECRET_HEADER" Target="MESSAGES_VIEW_SECRET_HEADER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">This message has been destroyed</Config>
+  <Config Name="PRUNE_ENABLED" Target="PRUNE_ENABLED" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="PRUNE_MIN_DAYS" Target="PRUNE_MIN_DAYS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">365</Config>
+  <Config Name="PRUNE_MAX_DAYS" Target="PRUNE_MAX_DAYS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">730</Config>
+</Container>
