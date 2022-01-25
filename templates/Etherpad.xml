@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Etherpad</Name>
+  <Repository>etherpad/etherpad</Repository>
+  <Registry>https://hub.docker.com/r/etherpad/etherpad</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119111-support-smartphonelover-etherpad-real-time-collaborative-editor/</Support>
+  <Project>https://github.com/ether/etherpad-lite</Project>
+  <Overview>DESCRIPTION&#xD;
+Etherpad is a real-time collaborative editor scalable to thousands of simultaneous real time users. It provides full data export capabilities, and runs on your server, under your control.&#xD;
+&#xD;
+Here you will find some examples of different types of implementations for Etherpad, in live demos:&#xD;
+https://github.com/ether/etherpad-lite#try-it-out&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; This container works with an embedded database (DirtyDB) is no external database is configured (template), but you can use your own if you want, like: MariaDB, MySQL, MongoDB, PostgreSQL, and some more. Check 'https://www.npmjs.com/package/ueberdb2' to know more about them, and 'https://github.com/ether/etherpad-lite/blob/develop/doc/docker.md#database' to know how to configure them inside the template.&#xD;
+&#x2022; This template includes only the most basic variables, but you have many many others to use and fully configure Etherpad. Check 'https://github.com/ether/etherpad-lite/blob/develop/doc/docker.md' to know more.&#xD;
+&#x2022; You can also use a configuration file (settings.json) if you don't want to use variables within this template. Check 'https://github.com/ether/etherpad-lite#tweak-the-settings' for more details.&#xD;
+&#x2022; Etherpad supports the use of plugins to improve its functionalities. Check 'https://github.com/ether/etherpad-lite/wiki/Available-Plugins' to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-26)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:9001]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/etherpad.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643155131</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="9001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9001</Config>
+  <Config Name="Storage (data)" Target="/opt/etherpad-lite/var" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/etherpad</Config>
+  <Config Name="TITLE" Target="TITLE" Default="" Mode="" Description="The name of the instance." Type="Variable" Display="advanced" Required="false" Mask="false">Etherpad (unRAID)</Config>
+  <Config Name="FAVICON" Target="FAVICON" Default="" Mode="" Description="This is the favicon default name, or a fully specified URL to your own favicon." Type="Variable" Display="advanced" Required="false" Mask="false">favicon.ico</Config>
+  <Config Name="DEFAULT_PAD_TEXT" Target="DEFAULT_PAD_TEXT" Default="" Mode="" Description="The default text of a pad" Type="Variable" Display="advanced" Required="false" Mask="false">Welcome to Etherpad! This pad text is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents! Get involved with Etherpad at https://etherpad.org</Config>
+</Container>
