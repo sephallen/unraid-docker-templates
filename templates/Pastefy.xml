@@ -40,17 +40,17 @@ VERSION&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1643123538</DateInstalled>
+  <DateInstalled>1643123739</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>MySQL</Requires>
   <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9999</Config>
-  <Config Name="HTTP_SERVER_CORS" Target="HTTP_SERVER_CORS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">"*"</Config>
-  <Config Name="DATABASE_DRIVER" Target="DATABASE_DRIVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
-  <Config Name="DATABASE_NAME" Target="DATABASE_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pastefy</Config>
-  <Config Name="DATABASE_USER" Target="DATABASE_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pastefy</Config>
-  <Config Name="DATABASE_PASSWORD" Target="DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pastefy</Config>
-  <Config Name="DATABASE_HOST" Target="DATABASE_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.120</Config>
-  <Config Name="DATABASE_PORT" Target="DATABASE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="AUTH_PROVIDER" Target="AUTH_PROVIDER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">NONE</Config>
+  <Config Name="DATABASE_DRIVER" Target="DATABASE_DRIVER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">mysql</Config>
+  <Config Name="DATABASE_NAME" Target="DATABASE_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATABASE_USER" Target="DATABASE_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATABASE_PASSWORD" Target="DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATABASE_HOST" Target="DATABASE_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATABASE_PORT" Target="DATABASE_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="HTTP_SERVER_CORS" Target="HTTP_SERVER_CORS" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">"*"</Config>
+  <Config Name="AUTH_PROVIDER" Target="AUTH_PROVIDER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">NONE</Config>
 </Container>
