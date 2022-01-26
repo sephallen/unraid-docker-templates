@@ -19,6 +19,7 @@
 - Gokapi (v1.0)
 - h5ai (v1.0)
 - Hiccup (v1.0)
+- HRConvert2 (v1.0)
 - imgpush (v1.0)
 - Inkscape-Desktop-G3 (v1.0)
 - Jellyfin (v1.1)
