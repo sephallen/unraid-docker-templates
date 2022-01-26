@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HRConvert2</Name>
+  <Repository>dwaaan/hrconvert2-docker</Repository>
+  <Registry>https://hub.docker.com/r/dwaaan/hrconvert2-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119152-support-smartphonelover-hrconvert2-drag-and-drop-file-converter/</Support>
+  <Project>https://github.com/dwaaan/HRConvert2-Docker</Project>
+  <Overview>DESCRIPTION&#xD;
+A self-hosted, drag-and-drop, &amp;amp; nosql file conversion server that supports 62x file formats.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before creating the container: 'mkdir -m755 /mnt/user/appdata/hrconvert2' and 'curl https://raw.githubusercontent.com/dwaaan/HRConvert2-Docker/master/config.php --output /mnt/user/appdata/hrconvert2/config.php'.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-27)</Overview>
+  <Category>Productivity: Tools: MediaApp:Video MediaApp:Music MediaApp:Photos MediaApp:Other MediaServer:Video MediaServer:Music MediaServer:Photos MediaServer:Other</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/hrconvert2.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643241354</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
+  <Config Name="Storage (config file)" Target="/var/www/html/HRProprietary/HRConvert2/config.php" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/hrconvert2/config.php</Config>
+</Container>
