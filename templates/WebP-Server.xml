@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>WebP-Server</Name>
+  <Repository>webpsh/webps</Repository>
+  <Registry>https://hub.docker.com/r/webpsh/webps</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119178-support-smartphonelover-webp-server/</Support>
+  <Project>https://github.com/webp-sh/webp_server_go</Project>
+  <Overview>DESCRIPTION&#xD;
+Go version of WebP Server. A tool that will serve your JPG/PNGs as WebP format with compression, on-the-fly.&#xD;
+&#xD;
+Features:&#xD;
+&#x2022; Single binary&#xD;
+&#x2022; Blazing fast&#xD;
+&#x2022; Convert images on the fly (jpeg,jpg,png,bmp,gif)&#xD;
+&#xD;
+How to call an image from the server?&#xD;
+If you have the pic 'IMAGE.png' inside of '/.../webp-server/pics', call it as: 'HOST_IP:PORT/IMAGE.png'.&#xD;
+If you have the pic 'IMAGE.png' inside of '/.../webp-server/pics/subdir', call it as: 'HOST_IP:PORT/subdir/IMAGE.png'.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; I have added all the variables available from the 'config.json' file here in this template, so it won't be necessary.&#xD;
+&#x2022; If requesting a GIF image from the server, it will only be served as a static image.&#xD;
+&#x2022; You can also create subdirectories under '/.../webp-server/pics' to best organize your images.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-27)</Overview>
+  <Category>Cloud: Productivity: Tools: MediaServer:Photos Network:Web Network:FTP</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/webpserver.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643287237</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="3333" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
+  <Config Name="Storage (pics)" Target="/opt/pics" Default="" Mode="ro" Description="This is the location for your pics." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/webp-server/pics/</Config>
+  <Config Name="Storage (cache)" Target="/opt/exhaust" Default="" Mode="rw" Description="Location for generated WEBP images to serve them later faster." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/webp-server/cache/</Config>
+  <Config Name="ALLOWED_TYPES" Target="ALLOWED_TYPES" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">jpg,png,jpeg,bmp,gif</Config>
+  <Config Name="QUALITY" Target="QUALITY" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">80</Config>
+  <Config Name="ENABLE_AVIF" Target="ENABLE_AVIF" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+</Container>
