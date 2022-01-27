@@ -45,6 +45,7 @@
 - Vorta2 (v1.0)
 - Webmail-Lite-PHP (v1.0)
 - Webmail-Pro-PHP (v1.0)
+- WebP-Server (v1.0)
 - WhatsApp-Analyzer (v1.0)
 - WireGuard-Easy (v1.0)
 - YouTube-DL (v1.0)
