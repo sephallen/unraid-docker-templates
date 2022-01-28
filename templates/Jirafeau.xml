@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Jirafeau</Name>
+  <Repository>mojo42/jirafeau</Repository>
+  <Registry>https://hub.docker.com/r/mojo42/jirafeau</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119232-support-smartphonelover-jirafeau/</Support>
+  <Project>https://gitlab.com/mojo42/Jirafeau</Project>
+  <Overview>DESCRIPTION&#xD;
+Jirafeau is a "one-click-filesharing": Select your file, upload, share a link. That's it.&#xD;
+&#xD;
+Live demo:&#xD;
+https://jirafeau.net/&#xD;
+&#xD;
+What to do after first launch of Jirafeau?&#xD;
+After building and launching the container for the first time, you will be asked to configure it through a few steps.&#xD;
+1. Configure an admin password (admin panel), or leave it blank if you don't want to enter anything.&#xD;
+2. Configure the 'base address' (leave it as it is if using the service in a LAN, if not, configure it accordingly) and 'data directory' (set it as: /data).&#xD;
+3. You're done!&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before creating the container: 'mkdir -m755 /mnt/user/appdata/jirafeau/config' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/jirafeau/config.local.php --output /mnt/user/appdata/jirafeau/config/config.local.php'.&#xD;
+&#x2022; To access the admin panel, add 'admin.php' at the end of the container IP address: 'HOST_IP:PORT/admin.php'.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-28)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:Web Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/jirafeau.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643398645</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8493</Config>
+  <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="This is the location for the data (files and links)." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jirafeau/data</Config>
+  <Config Name="Storage (config)" Target="/www/lib/config.local.php" Default="" Mode="rw" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/jirafeau/config/config.local.php</Config>
+</Container>
