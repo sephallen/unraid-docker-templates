@@ -23,6 +23,7 @@
 - imgpush (v1.0)
 - Inkscape-Desktop-G3 (v1.0)
 - Jellyfin (v1.1)
+- Jirafeau (v1.0)
 - VLMCSD-KMS-Server (v1.0)
 - LogicalDOC-CE (v1.0)
 - MailDev (v1.0)
