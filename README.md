@@ -28,6 +28,7 @@
 - LogicalDOC-CE (v1.0)
 - MailDev (v1.0)
 - Mayan-EDMS (v1.0)
+- Mojopaste (v1.0)
 - Monero-NODE (v1.0)
 - Monitoror (v1.0)
 - OpenBooks (v1.0)
