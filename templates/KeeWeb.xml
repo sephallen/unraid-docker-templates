@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>KeeWeb</Name>
+  <Repository>antelle/keeweb</Repository>
+  <Registry>https://hub.docker.com/r/antelle/keeweb</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119263-support-smartphonelover-keeweb/</Support>
+  <Project>https://github.com/keeweb/keeweb</Project>
+  <Overview>DESCRIPTION&#xD;
+This webapp is a browser and desktop password manager compatible with KeePass databases. It doesn't require any server or additional resources. The app can run either in browser, or as a desktop app.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; I couldn't make the container to load using the HTTP port (80), being an option in the docker run cmd. If you know how to solve it, or what could be the reason, I would thank you for help and explanation ;).&#xD;
+&#x2022; You can still use the interface without authenticating the session (HTTPS), but you will need to bypass it when the browser asks for it. Otherwise, generate the certificate with NPM or Nginx.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-29)</Overview>
+  <Category>Productivity: Tools: Network:Web Network:Management</Category>
+  <WebUI>https://[IP]:[PORT:443]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/keeweb.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643463576</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI (HTTPS)" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8003</Config>
+  <Config Name="Storage (nginx)" Target="/etc/nginx/external/" Default="" Mode="rw" Description="Place here your files: 'dh.pem', 'cert.pem' and 'key.pem'." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/keeweb/</Config>
+</Container>
