@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SQLite-Web</Name>
+  <Repository>coleifer/sqlite-web</Repository>
+  <Registry>https://hub.docker.com/r/coleifer/sqlite-web</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119274-support-smartphonelover-sqlite-web-sqlite-browser/</Support>
+  <Project>https://github.com/coleifer/sqlite-web</Project>
+  <Overview>DESCRIPTION&#xD;
+SQLite-Web is a web-based SQLite database browser written in Python.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-29)</Overview>
+  <Category>Productivity: Tools: Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/sqlite3.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643479316</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/sqlite-web</Config>
+  <Config Name="SQLITE_DATABASE" Target="SQLITE_DATABASE" Default="" Mode="" Description="This is the database file that will be loaded in the web browser." Type="Variable" Display="always" Required="true" Mask="false">db_name.db</Config>
+</Container>
