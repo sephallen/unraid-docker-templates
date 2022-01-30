@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MiniNote</Name>
+  <Repository>n1try/mininote</Repository>
+  <Registry>https://hub.docker.com/r/n1try/mininote</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119293-support-smartphonelover-mininote/</Support>
+  <Project>https://github.com/muety/mininote</Project>
+  <Overview>DESCRIPTION&#xD;
+A simple, self-hosted, encrypted Markdown note-taking app built with Vue 3, and Express.&#xD;
+&#xD;
+Live demo:&#xD;
+https://apps.muetsch.io/mininote&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-30)</Overview>
+  <Category>Productivity: Tools: Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/mininote.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643508478</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Storage (data)" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mininote</Config>
+</Container>
