@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>DailyTxT</Name>
+  <Repository>phitux/dailytxt</Repository>
+  <Registry>https://hub.docker.com/r/phitux/dailytxt/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119390-support-smartphonelover-dailytxt/</Support>
+  <Project>https://github.com/PhiTux/DailyTxT</Project>
+  <Overview>DESCRIPTION&#xD;
+DailyTxT is an encrypted Diary Web-App to simply write down your stories of the day and to easily find them again. It is written in Python Flask (Backend) and Vue.JS (Frontend) and meant to be run via Docker.&#xD;
+&#xD;
+Features:&#xD;
+&#x2022; Encryption&#xD;
+&#x2022; File upload&#xD;
+&#x2022; Search&#xD;
+&#x2022; Multi language&#xD;
+&#x2022; Responsive design (mobiles)&#xD;
+&#x2022; Multi user&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; When configuring the WebUI port, if not the same by default, be sure to configure the 'PORT' variable with the same port number.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-01-31)</Overview>
+  <Category>Productivity: Security: Tools: MediaApp:Books</Category>
+  <WebUI>http://[IP]:[PORT:8765]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/dailytxt.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643660253</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8765" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8765</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="Generate secret key, by running the following cmd from unRAID Terminal: 'openssl rand -base64 32'." Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Storage (data)" Target="/app/data/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dailytxt</Config>
+  <Config Name="ALLOW_REGISTRATION" Target="ALLOW_REGISTRATION" Default="" Mode="" Description="Enables or disables registration for new users. (True/False)" Type="Variable" Display="advanced" Required="false" Mask="false">True</Config>
+  <Config Name="DATA_INDENT" Target="DATA_INDENT" Default="" Mode="" Description="Use this if you want the JSON log file to be indented. Makes it easier to compare the files." Type="Variable" Display="advanced" Required="false" Mask="false">2</Config>
+  <Config Name="JWT_EXP_DAYS" Target="JWT_EXP_DAYS" Default="" Mode="" Description="After how many days the JWT token will expire and you have to re-login. (default 30 days)" Type="Variable" Display="advanced" Required="false" Mask="false">7</Config>
+  <Config Name="PORT" Target="PORT" Default="" Mode="" Description="Used to pass the number of the port to the nginx 'default.conf' file, from inside the container." Type="Variable" Display="advanced" Required="false" Mask="false">8765</Config>
+</Container>
