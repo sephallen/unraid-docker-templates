@@ -8,6 +8,7 @@
 - Composerize (v1.0)
 - Cowyo (v1.0)
 - Cryptgeon (v1.0)
+- DailyTxT (v1.0)
 - Docker-Hub-RSS (v1.0)
 - Etherpad (v1.0)
 - Euterpe (v1.0)
