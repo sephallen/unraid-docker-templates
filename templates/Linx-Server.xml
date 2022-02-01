@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Linx-Server</Name>
+  <Repository>andreimarcu/linx-server</Repository>
+  <Registry>https://hub.docker.com/r/andreimarcu/linx-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119421-support-smartphonelover-linx-server/</Support>
+  <Project>https://github.com/ZizzyDizzyMC/linx-server</Project>
+  <Overview>DESCRIPTION&#xD;
+Self-hosted file/media sharing website.&#xD;
+&#xD;
+Features:&#xD;
+&#x2022; Display common filetypes (image, video, audio, markdown, pdf)&#xD;
+&#x2022; Display syntax-highlighted code with in-place editing&#xD;
+&#x2022; Documented API with keys for restricting uploads&#xD;
+&#x2022; Torrent download of files using web seeding&#xD;
+&#x2022; File expiry, deletion key, file access key, and random filename options&#xD;
+&#xD;
+Live demo:&#xD;
+https://put.icu/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m755 /mnt/user/appdata/linx-server' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/Linx-Server/linx-server.conf --output /mnt/user/appdata/linx-server/linx-server.conf'.&#xD;
+&#x2022; I have omitted some of the variables available on the 'linx-server.conf' file, as them were not much significant for me when building this template. To add/remove the ones that best suits you, check the GitHub to know more.&#xD;
+&#x2022; Linx-Server supports the use of API to upload files remotly. Check the GitHub repo to know more.&#xD;
+&#x2022; There are some clients available (CLI, Android) to interact with Linx-Server. Check the GitHub repo to know more.&#xD;
+&#xD;
+VERSION&#xD;
+v1.0 (2022-02-01)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:Web Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/linx-server.png</Icon>
+  <ExtraParams/>
+  <PostArgs>-config /data/linx-server.conf</PostArgs>
+  <CPUset/>
+  <DateInstalled>1643719119</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUi" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Storage (files)" Target="/data/files" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/linx-server/files</Config>
+  <Config Name="Storage (meta)" Target="/data/meta" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/linx-server/meta</Config>
+  <Config Name="Storage (config file)" Target="/data/linx-server.conf" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/linx-server/linx-server.conf</Config>
+</Container>
