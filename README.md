@@ -27,6 +27,7 @@
 - Jellyfin (v1.1)
 - Jirafeau (v1.0)
 - KeeWeb (v1.0)
+- Linx-Server (v1.0)
 - LogicalDOC-CE (v1.0)
 - MailDev (v1.0)
 - Mayan-EDMS (v1.0)
