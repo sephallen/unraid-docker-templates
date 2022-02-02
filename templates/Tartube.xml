@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tartube</Name>
+  <Repository>468654/tartube</Repository>
+  <Registry>https://hub.docker.com/r/468654/tartube</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119482-support-smartphonelover-tartube/</Support>
+  <Project>https://github.com/axcore/tartube</Project>
+  <Overview>DESCRIPTION&#xD;
+Tartube is a GUI front-end for youtube-dl, yt-dlp and other compatible video downloaders.&#xD;
+It is partly based on youtube-dl-gui and is written in Python 3 / Gtk 3. Tartube runs on MS Windows, Linux, BSD and MacOS.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; To connect to the noVNC interface, click on 'Connect' manually.&#xD;
+&#x2022; You will need to install 'ffmpeg' (apt install ffmpeg) separately.&#xD;
+&#x2022; Seems that the ROOT_PWD variable that handles the Debian root password is not working properly. (ffmpeg installation: waiting to be solved)&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-02)&#xD;
+&#xD;
+IMAGE NOT OFFICIAL AND WAITING FOR DEBIAN ROOT CREDENTIALS FIX</Overview>
+  <Category>Productivity: Tools: MediaApp:Video MediaApp:Music Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:8080]/vnc.html</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/tartube.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643804103</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5001</Config>
+  <Config Name="Storage (data)" Target="/debian" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tartube</Config>
+  <Config Name="Storage (bridge)" Target="/unraid_mnt" Default="" Mode="rw" Description="This is the external mounting point to allow read/write data between the container and the host." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="UID" Target="UID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="GID" Target="GID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">000</Config>
+  <Config Name="USER" Target="USER" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Debian</Config>
+  <Config Name="ROOT_PWD" Target="ROOT_PWD" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Docker!</Config>
+</Container>
