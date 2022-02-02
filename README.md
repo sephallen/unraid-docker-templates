@@ -39,6 +39,7 @@
 - OpenGL-Desktop-G3 (v1.0)
 - OpenKM-CE (v1.0)
 - Pastefy (v1.0)
+- Pelik (v1.0)
 - Photo-Stream (v1,0)
 - Portainer-Agent (v1.0)
 - Portainer-CE (v1.0)
