@@ -48,6 +48,7 @@
 - Sharry (v1.0)
 - Simply-Shorten (v1.0)
 - SQLite-Web (v1.0)
+- Tartube (v1.0)
 - Tanoshi (v1.0)
 - Todo (v1.0)
 - VLMCSD-KMS-Server (v1.0)
