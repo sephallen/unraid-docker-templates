@@ -41,17 +41,17 @@
 - Simply-Shorten (v1.0)
 - WebP-Server (v1.0)
 
-**Media Streaming**
-- Euterpe (v1.0)
-- Gerbera (v1.0)
-- Jellyfin (v1.1)
+**Media Converters & Editing**
+- HRConvert2 (v1.0)
 
 **Media Downloaders**
 - Tartube (v1.0)
 - YouTube-DL (v1.0)
 
-**Media Converter & Editing**
-- HRConvert2 (v1.0)
+**Media Streaming**
+- Euterpe (v1.0)
+- Gerbera (v1.0)
+- Jellyfin (v1.1)
 
 **Miscellaneous**
 - Blender-Desktop-G3 (v1.0)
