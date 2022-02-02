@@ -23,7 +23,7 @@ Live demo:&#xD;
 https://put.icu/&#xD;
 &#xD;
 NOTES&#xD;
-&#x2022; Run the following cmds before building the container: 'mkdir -m755 /mnt/user/appdata/linx-server' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/Linx-Server/linx-server.conf --output /mnt/user/appdata/linx-server/linx-server.conf'.&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m755 /mnt/user/appdata/linx-server' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/linx-server/linx-server.conf --output /mnt/user/appdata/linx-server/linx-server.conf'.&#xD;
 &#x2022; I have omitted some of the variables available on the 'linx-server.conf' file, as them were not much significant for me when building this template. To add/remove the ones that best suits you, check the GitHub to know more.&#xD;
 &#x2022; Linx-Server supports the use of API to upload files remotly. Check the GitHub repo to know more.&#xD;
 &#x2022; There are some clients available (CLI, Android) to interact with Linx-Server. Check the GitHub repo to know more.&#xD;
