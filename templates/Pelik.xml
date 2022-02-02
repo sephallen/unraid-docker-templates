@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Plik</Name>
+  <Repository>rootgg/plik</Repository>
+  <Registry>https://hub.docker.com/r/rootgg/plik</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119480-support-smartphonelover-plik/</Support>
+  <Project>https://github.com/root-gg/plik</Project>
+  <Overview>DESCRIPTION&#xD;
+Plik is a scalable &amp;amp; friendly temporary file upload system (Wetransfer like) in golang.&#xD;
+&#xD;
+Live demo:&#xD;
+https://plik.root.gg/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m777 /mnt/user/appdata/plik', 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/plik/plikd.cfg'.&#xD;
+&#x2022; Plik uses an embbeded database (SQLite) by default, but you can use an external database (MySQL, PostgreSQL) if decided. Check the 'plikd.cfg' file to know more.&#xD;
+&#x2022; Plik has an HTTP API to manage the upload and get files. Check the GitHub repo to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-01)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/plik.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643800832</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Storage (config file)" Target="/home/plik/server/plikd.cfg" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/plik/plikd.cfg</Config>
+  <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/plik/data</Config>
+</Container>
