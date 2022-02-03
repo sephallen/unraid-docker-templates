@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>SyncTube</Name>
+  <Repository>littlestache/synctube</Repository>
+  <Registry>https://hub.docker.com/r/littlestache/synctube</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119533-support-smartphonelover-synctube/</Support>
+  <Project>https://github.com/RblSb/SyncTube</Project>
+  <Overview>DESCRIPTION&#xD;
+Synchronized video viewing with chat and other features. Lightweight modern implementation and very easy way to run locally.&#xD;
+&#xD;
+Supported players:&#xD;
+&#x2022; Youtube (videos, streams and playlists)&#xD;
+&#x2022; RAW MP4 videos and M3U8 playlists (or any other media format supported in browser)&#xD;
+&#x2022; Iframes (without sync)&#xD;
+&#xD;
+How to use?&#xD;
+1. Login with any nickname.&#xD;
+2. Add your video url with "plus" button below (youtube or direct link to mp4 for example).&#xD;
+3. Now it plays and syncs for all page users.&#xD;
+4. You can click "leader" button to get access to global video controls (play/pause, time setting, playback speed).&#xD;
+5. If you want to restrict permissions or add admins/emotes, see Configuration section.&#xD;
+&#xD;
+Live demo:&#xD;
+https://synctube-example.herokuapp.com/&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m755 /mnt/user/appdata/synctube' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/synctube/config.json --output /mnt/user/appdata/synctube/config.json'.&#xD;
+&#x2022; There's a Android client to connect to the server: 'https://github.com/RblSb/SyncTubeApp', but you will have to compile it yourself.&#xD;
+&#x2022; Extra files (state.json, users.json) and directories (/crashes, /logs) will be generated inside '/../appdata/synctube/ dir, once launched. If you don't want them to be publicly available, change the Path settings from RW (read-write) to RO (read-only).&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-03)</Overview>
+  <Category>Cloud: Productivity: Tools: MediaApp:Video MediaServer:Video Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:4200]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/synctube.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643891585</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="4200" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4200</Config>
+  <Config Name="Storage (config)" Target="/usr/src/app/user" Default="" Mode="rw" Description="This is the location for the config file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/synctube/</Config>
+</Container>
