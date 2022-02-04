@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Passbolt-CE</Name>
+  <Repository>passbolt/passbolt:latest-ce</Repository>
+  <Registry>https://hub.docker.com/r/passbolt/passbolt/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119569-support-smartphonelover-passbolt/</Support>
+  <Project>https://github.com/passbolt/passbolt_docker</Project>
+  <Overview>DESCRIPTION&#xD;
+This is the template for Passbolt CE (Community Edition), a free and open source password manager that allows team members to store and share credentials securely.&#xD;
+&#xD;
+Comparison chart:&#xD;
+https://signup.passbolt.com/pricing/pro#features&#xD;
+&#xD;
+How to proceed after first launch?&#xD;
+1. Register new user at first launch...&#xD;
+Open unRAID Terminal (not from container), and enter the following cmd (your details): 'docker exec CONTAINER_NAME su -m -c "bin/cake passbolt register_user -u USER@EMAIL.COM -f USER_NAME -l USER_SURNAME -r admin" -s /bin/sh www-data'.&#xD;
+2. Generating registration link...&#xD;
+Once the previous cmd finishes, it will generate a registration link based on your data entered before. The URL will be something like: 'https://HOST_IP:PORT/setup/install/5426733-63k6...'. Now, copy/paste (or just click) the address and open it with your favourite web browser.&#xD;
+3. Finishing registration process...&#xD;
+You will be asked to create a passphrase to protect your account, and after entering it a recovery kit file (passbolt-recovery-kit.asc) will be generated and downloaded locally. Now, continue with the rest of the steps. Done!&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; It requires an external database. (MariaDB, MySQL)&#xD;
+&#x2022; It may asks you to install the browser's extension (Chrome, Mozilla...).&#xD;
+&#x2022; You have many other variables to use on this template if you need them. Check the GitHub repo to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-03)</Overview>
+  <Category>Productivity: Security: Tools:</Category>
+  <WebUI>https://[IP]:[PORT:443]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/passbolt.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1643933598</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Database (MariaDB, MySQL)</Requires>
+  <Config Name="WebUI" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="DATASOURCES_DEFAULT_HOST" Target="DATASOURCES_DEFAULT_HOST" Default="" Mode="" Description="This is the database host ip." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATASOURCES_DEFAULT_PORT" Target="DATASOURCES_DEFAULT_PORT" Default="" Mode="" Description="This is the database port." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATASOURCES_DEFAULT_DATABASE" Target="DATASOURCES_DEFAULT_DATABASE" Default="" Mode="" Description="This is the database name." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATASOURCES_DEFAULT_PASSWORD" Target="DATASOURCES_DEFAULT_PASSWORD" Default="" Mode="" Description="This is the database password." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DATASOURCES_DEFAULT_USERNAME" Target="DATASOURCES_DEFAULT_USERNAME" Default="" Mode="" Description="This is the database username." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Storage (data) [1]" Target="/etc/passbolt/gpg" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/gpg</Config>
+  <Config Name="Storage (data) [2]" Target="/etc/passbolt/jwt" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/passbolt-ce/jwt</Config>
+  <Config Name="APP_FULL_BASE_URL" Target="APP_FULL_BASE_URL" Default="" Mode="" Description="This is the base URL used when creating new user on first launch (terminal). Make sure it matches with your container (ip and port)." Type="Variable" Display="always" Required="true" Mask="false">https://HOST_IP:PORT</Config>
+</Container>
