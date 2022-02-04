@@ -85,6 +85,8 @@
 **Password Managers**
 - 2FAuth (v1.0)
 - KeeWeb (v1.0)
+- Passbolt-CE (v1.0)
+- Passbolt-PRO (v1.0)
 
 **Pastebins**
 - FlashPaper (v1.0)
