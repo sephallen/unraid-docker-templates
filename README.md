@@ -77,6 +77,7 @@
 - DailyTxT (v1.0)
 - MiniNote (1.0)
 - Todo (v1.0)
+- todoMini (v1.0)
 
 **Office Suites**
 - Etherpad (v1.0)
