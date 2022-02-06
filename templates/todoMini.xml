@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>todoMini</Name>
+  <Repository>brettdocker/minitodo</Repository>
+  <Registry>https://hub.docker.com/r/brettdocker/minitodo</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119699-support-smartphonelover-todomini/</Support>
+  <Project>https://github.com/appMini/todoMini</Project>
+  <Overview>DESCRIPTION&#xD;
+It's a minimal open source web application for prioritising lists of items that you can tick off, like to-do lists, dev tasks, &amp;amp; shopping lists.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; To override the default background included, use the 'Storage (background)' line below. Do not forget to create the required directory tree and keep the same filename plus extension, before building the container. If not used, delete that setting from template.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-07)</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/todomini.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644188255</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8047</Config>
+  <Config Name="Storage (background)" Target="/var/www/public/img/stardust.png" Default="" Mode="ro" Description="This allows you to replacethe default background with your own one. Keep the same filename and extension." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/minitodo/stardust.png</Config>
+</Container>
