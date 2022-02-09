@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Gonic</Name>
+  <Repository>sentriz/gonic</Repository>
+  <Registry>https://hub.docker.com/r/sentriz/gonic</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119824-support-smartphonelover-gonic/</Support>
+  <Project>https://github.com/sentriz/gonic</Project>
+  <Overview>DESCRIPTION&#xD;
+FLOSS alternative to subsonic, supporting its many clients.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; The default credentials: admin/admin (user/pass).&#xD;
+&#x2022; You have other variables that you can use to fully customize the service. Check 'https://github.com/sentriz/gonic#configuration-options' to know more.&#xD;
+&#x2022; To configure 'jukebox' checl the GitHub repo: 'https://github.com/sentriz/gonic#with-docker'.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-09)</Overview>
+  <Category>Productivity: Tools: MediaApp:Music MediaServer:Music</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/gonic.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644424133</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8059</Config>
+  <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="This is the location of the internal data from Gonic." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gonic/data</Config>
+  <Config Name="Storage (cache)" Target="/cache" Default="" Mode="rw" Description="This the location the temporal files, like: transcodes, covers, etc." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gonic/cache</Config>
+  <Config Name="Storage (music)" Target="/music" Default="" Mode="ro" Description="This is your media library for your music." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Storage (podcasts)" Target="/podcasts" Default="" Mode="ro" Description="This is your media library for your podcasts." Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
