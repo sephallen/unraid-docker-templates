@@ -52,6 +52,7 @@
 **Media Streaming**
 - Euterpe (v1.0)
 - Gerbera (v1.0)
+- Gonic (v1.0)
 - Jellyfin (v1.1)
 - SyncTube (v1.0)
 
