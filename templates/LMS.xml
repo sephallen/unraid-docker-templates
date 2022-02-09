@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>LMS</Name>
+  <Repository>epoupon/lms</Repository>
+  <Registry>https://hub.docker.com/r/epoupon/lms</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119838-support-smartphonelover-lms-lightweight-music-server/</Support>
+  <Project>https://github.com/epoupon/lms</Project>
+  <Overview>DESCRIPTION&#xD;
+LMS (Lightweight Music Server) is a self-hosted music streaming software: access your music collection from anywhere using a web interface!&#xD;
+&#xD;
+Live demo:&#xD;
+http://lms-demo.poupon.dev/&#xD;
+The administration panel is not available in the live demo.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m 777 -p /mnt/user/appdata/lms/config' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/lms/lms.conf --output /mnt/user/appdata/lms/config/lms.conf'.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-09)</Overview>
+  <Category>Tools: MediaApp:Music MediaServer:Music</Category>
+  <WebUI>http://[IP]:[PORT:5082]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/lms.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644446826</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="5082" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5082</Config>
+  <Config Name="Storage (data)" Target="/var/lms" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/lms/data</Config>
+  <Config Name="Storage (config file)" Target="/etc/lms.conf" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/lms/config/lms.conf</Config>
+  <Config Name="Storage (media)" Target="/music" Default="" Mode="ro" Description="This is the location for you media library." Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
