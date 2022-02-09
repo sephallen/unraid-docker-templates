@@ -30,6 +30,7 @@
 **File Hosting & Sharing**
 - Aurora-Files (v1.0)
 - Cryptgeon (v1.0)
+- FileGator (v1.0)
 - FileShelter (v1.0)
 - Gokapi (v1.0)
 - h5ai (v1.0)
