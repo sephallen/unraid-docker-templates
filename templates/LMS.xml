@@ -17,7 +17,7 @@ http://lms-demo.poupon.dev/&#xD;
 The administration panel is not available in the live demo.&#xD;
 &#xD;
 NOTES&#xD;
-&#x2022; Run the following cmds before building the container: 'mkdir -m 777 -p /mnt/user/appdata/lms/config' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/lms/lms.conf --output /mnt/user/appdata/lms/config/lms.conf'.&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m 777 -p /mnt/user/appdata/lms/data /mnt/user/appdata/lms/config' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/lms/lms.conf --output /mnt/user/appdata/lms/config/lms.conf'.&#xD;
 &#xD;
 VERSION&#xD;
 1.0 (2022-02-09)</Overview>
