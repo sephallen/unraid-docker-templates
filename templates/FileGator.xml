@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FileGator</Name>
+  <Repository>maxime1907/filegator</Repository>
+  <Registry>https://hub.docker.com/r/maxime1907/filegator</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119834-support-smartphonelover-filegator/</Support>
+  <Project>https://github.com/filegator/filegator</Project>
+  <Overview>DESCRIPTION&#xD;
+FileGator is a free, open-source, self-hosted web application for managing files and folders.&#xD;
+&#xD;
+Live demo:&#xD;
+https://github.com/filegator/filegator#demo&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; The default credentials: admin/admin123 (user/pass).&#xD;
+&#x2022; This image was based on Linuxserver.io's alpine nginx.&#xD;
+&#x2022; You can customize the interface and how FileGator works even deeper, by editing its 'configuration.php' file. Check 'https://docs.filegator.io/configuration/basic.html' to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-09)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/filegator.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644436813</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI (HTTP)" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
+  <Config Name="WebUI (HTTPS)" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8049</Config>
+  <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="This is the location for all the personal information." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filegator/data</Config>
+  <Config Name="Storage (config)" Target="/config" Default="" Mode="rw" Description="This is the location for the configuration files." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filegator/config</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+</Container>
