@@ -37,6 +37,7 @@
 - Jirafeau (v1.0)
 - Linx-Server (v1.0)
 - Pelik (v1.0)
+- RustyPaste (v1.0)
 - Sharry (v1.0)
 - Simply-Shorten (v1.0)
 - WebP-Server (v1.0)
