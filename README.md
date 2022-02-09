@@ -55,6 +55,7 @@
 - Gerbera (v1.0)
 - Gonic (v1.0)
 - Jellyfin (v1.1)
+- LMS/LightweightMusicServer (v1.0)
 - SyncTube (v1.0)
 
 **Miscellaneous**
