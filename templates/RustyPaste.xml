@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RustyPaste</Name>
+  <Repository>orhunp/rustypaste</Repository>
+  <Registry>https://hub.docker.com/r/orhunp/rustypaste</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119816-support-smartphonelover-rustypaste/</Support>
+  <Project>https://github.com/orhun/rustypaste</Project>
+  <Overview>DESCRIPTION&#xD;
+Rustypaste is a minimal file upload/pastebin service.&#xD;
+&#xD;
+How to upload files to the server?&#xD;
+You have three main different ways by wich you can upload files to your RustyPaste server.&#xD;
+&#x2022; [UI] Using some kind of web-based file browser, like: Krusader, File Browser or MC from Terminal).&#xD;
+For example, using Krusader, copy/move and paste the decided file on '/.../rustypaste/upload/*' directory.&#xD;
+&#x2022; [CLI] Using the 'curl' command.&#xD;
+This method offers you two different ways by wich you can upload files to your server:&#xD;
+1. Locally...&#xD;
+Use the cmd 'curl -F 'file=@file_name.ext' server_addres'. Example: 'curl -F 'file=pink_house.jpg' 192.168.1.100:8059'.&#xD;
+2. Remotly...&#xD;
+Use the cmd 'curl -F 'url=https://server.com/file_name.ext" server_addres'. Example: 'curl -F 'file=https://pinkserver.com/pink_house.jpg' 192.168.1.100:8059'.&#xD;
+&#xD;
+How do I call my files from the server?&#xD;
+It's as simple as writing 'server_address/file_name.ext' from any web browser, or you can use 'curl server_address/file_name.ext'.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Run the following cmds before creating the container: 'mkdir -m777 -p /mnt/user/appdata/rustypaste/uploads' and 'curl https://raw.githubusercontent.com/orhun/rustypaste/master/config.toml --output /mnt/user/appdata/rustypaste/config.toml'.&#xD;
+&#x2022; You have many other parameters to pass to the server when uploading a file, like: one shot links, random file names, time expiration, url shortening, use credentials when using HTTP POST. Chech the GitHub repo to know more: 'orhun/rustypaste-cli.'&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-09)</Overview>
+  <Category>Cloud: Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/rustypaste.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644415570</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="Storage (uploads)" Target="/app/upload" Default="" Mode="rw" Description="This is the location for uploaded files." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rustypaste/upload</Config>
+  <Config Name="Storage (config file)" Target="/app/config.toml" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rustypaste/config.toml</Config>
+  <Config Name="RUST_LOG" Target="RUST_LOG" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">debug</Config>
+</Container>
