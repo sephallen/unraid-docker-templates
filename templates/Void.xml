@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Void</Name>
+  <Repository>alphanecron/void:v0</Repository>
+  <Registry>https://hub.docker.com/r/alphanecron/void</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119861-support-smartphonelover-void/</Support>
+  <Project>https://github.com/AlphaNecron/Void/</Project>
+  <Overview>DESCRIPTION&#xD;
+A self-hosted file hosting service based on Zipline with many features.&#xD;
+&#xD;
+How to proceed after container installation?&#xD;
+Before going into the next steps, configure the database container and run the required cmds. Then, after you have filled-in all the required fields (capital letters) from 'config.toml' file and Void's container was created (running)...&#xD;
+1. Wait until the container loads and is being configured internally. Then, it will be stopped (fail to start).&#xD;
+2. Launch the container again, and open the terminal on it.&#xD;
+3. Run the following cmds: 'export DATABASE_URL=postgres://USER:PASS@HOST_IP:PORT/DB_NAME' (edit with your details) and 'yarn prisma db seed'.&#xD;
+4. Now you can login with default credentials.&#xD;
+5. Done!&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; The default credentials: admin/voiduser (user/pass).&#xD;
+&#x2022; An external PostgreSQL database is required.&#xD;
+&#x2022; Run the followind cmds and edit the 'config.toml' file before building the container: 'mkdir -m755 -p /mnt/user/appdata/void/config' and 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/void/config.toml --output /mnt/user/appdata/void/config/config.toml'.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-10)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/void.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644493343</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>PostgreSQL</Requires>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Storage (uploads)" Target="/void/uploads" Default="" Mode="rw" Description="This is the location for the uploaded files." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/void/uploads</Config>
+  <Config Name="Storage (public)" Target="/void/public" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/void/public</Config>
+  <Config Name="Storage (config file)" Target="/void/config.toml" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/void/config/config.toml</Config>
+</Container>
