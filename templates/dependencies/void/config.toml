@@ -1,0 +1,50 @@
+# This file was edited by SmartPhoneLover, for the Void docker template for unRAID.
+# The original 'config.toml' file is available on 'https://github.com/AlphaNecron/Void/#config-schema'.
+
+[core]
+# Whether to use https or not
+secure = false
+# The secret used to sign cookie
+secret = '5N347GYFEeHC9w25JR5ugShsM4WKNk8h'
+# The host Void should run on
+host = '0.0.0.0'
+# The port Void should run on
+port = 3000
+# PostgreSQL database url
+database_url = 'postgres://void:void@192.168.1.120:5432/void_db'
+
+[bot]
+# Whether to enable the bot or not
+enabled = false
+# Bot's prefix
+prefix = '&'
+# Bot's token
+token = ''
+# Admin ids
+admin = ['']
+# The channel where logs are sent, leave blank to disable logging
+log_channel = ''
+# The default user id used to shorten and upload
+default_uid = 1
+# The hostname shortened urls should use in Twilight
+hostname = 'example.com'
+
+[shortener]
+# Whether to allow vanity urls or not
+allow_vanity = true
+# Slug length
+length = 6
+# Route to serve shortened urls
+route = '/go'
+
+[uploader]
+# Route to serve raw contents
+raw_route = '/r'
+# Slug length
+length = 6
+# The directory where images are stored
+directory = './uploads'
+# Max upload size (users only), in bytes
+max_size = 104857600
+# Blacklisted file extensions (users only)
+blacklisted = ['exe']
