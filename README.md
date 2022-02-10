@@ -41,6 +41,7 @@
 - RustyPaste (v1.0)
 - Sharry (v1.0)
 - Simply-Shorten (v1.0)
+- Void (v1.0)
 - WebP-Server (v1.0)
 
 **Media Converters & Editing**
