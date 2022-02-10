@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Wordle</Name>
+  <Repository>modem7/wordle</Repository>
+  <Registry>https://hub.docker.com/r/modem7/wordle</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119885-support-smartphonelover-wordle-word-guessing-game/</Support>
+  <Project>https://github.com/modem7/docker-wordle</Project>
+  <Overview>DESCRIPTION&#xD;
+This is a clone project of the popular word guessing game we all know and love, called: Wordle. Made using React, Typescript, and Tailwind.&#xD;
+&#xD;
+Live demo:&#xD;
+https://reactle.vercel.app/&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-11)</Overview>
+  <Category>Productivity: Other:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/wordle.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644535745</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
+</Container>
