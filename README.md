@@ -44,6 +44,9 @@
 - Void (v1.0)
 - WebP-Server (v1.0)
 
+**Games**
+- Wordle (v1.0)
+
 **Media Converters & Editing**
 - HRConvert2 (v1.0)
 
