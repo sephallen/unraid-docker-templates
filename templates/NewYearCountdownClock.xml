@@ -21,7 +21,7 @@ VERSION&#xD;
   <Category>Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/newyearcountdownclock_banner.png</Icon>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/newyearcountdownclock.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
