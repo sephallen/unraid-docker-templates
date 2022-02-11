@@ -70,6 +70,7 @@
 - FreeCAD-Desktop-G3 (v1.0)
 - GIMP-Desktop-G3 (v1.0)
 - Inkscape-Desktop-G3 (v1.0)
+- NewYearCountdownClock (v1.0)
 - OpenBooks (v1.0)
 - OpenGL-Desktop-G3 (v1.0)
 - Portainer-Agent (v1.0)
