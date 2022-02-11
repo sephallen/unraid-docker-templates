@@ -18,25 +18,27 @@ https://github.com/filegator/filegator#demo&#xD;
 NOTES&#xD;
 &#x2022; The default credentials: admin/admin123 (user/pass).&#xD;
 &#x2022; This image was based on Linuxserver.io's alpine nginx.&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir -m755 -p /mnt/user/appdata/filegator/config_file' and 'curl https://raw.githubusercontent.com/filegator/filegator/master/configuration_sample.php --output /mnt/user/appdata/filegator/config_file/configuration_sample.php'.&#xD;
 &#x2022; You can customize the interface and how FileGator works even deeper, by editing its 'configuration.php' file. Check 'https://docs.filegator.io/configuration/basic.html' to know more.&#xD;
 &#xD;
 VERSION&#xD;
-1.0 (2022-02-09)</Overview>
-  <Category>Cloud: Productivity: Tools: Network:FTP</Category>
+1.1 (2022-02-11)</Overview>
+  <Category>Cloud: Productivity: Tools:Utilities Network:FTP</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/FileGator.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/filegator.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1644436813</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1644594527</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI (HTTP)" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
   <Config Name="WebUI (HTTPS)" Target="443" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8049</Config>
   <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="This is the location for all the personal information." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filegator/data</Config>
   <Config Name="Storage (config)" Target="/config" Default="" Mode="rw" Description="This is the location for the configuration files." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filegator/config</Config>
+  <Config Name="Storage (config file)" Target="/var/www/localhost/filegator/configuration.php" Default="" Mode="ro" Description="This is the configuration file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/filegator/config_file/configuration.php</Config>
   <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
