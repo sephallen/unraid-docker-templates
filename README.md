@@ -92,6 +92,7 @@
 - todoMini (v1.0)
 
 **Office Suites**
+- EtherCalc (v1.0)
 - Etherpad (v1.0)
 - Rustpad (v1.0)
 
