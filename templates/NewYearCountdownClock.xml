@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NewYearCountdownClock</Name>
+  <Repository>modem7/newyearcountdown</Repository>
+  <Registry>https://hub.docker.com/r/modem7/newyearcountdown</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119888-support-smartphonelover-new-year-countdown-clock/</Support>
+  <Project>https://github.com/modem7/Docker-NewYearCountdown</Project>
+  <Overview>DESCRIPTION&#xD;
+Web app that counts down to next January 1st. It selects automatically the next year (based on local system time). &#xD;
+&#xD;
+Live demo:&#xD;
+https://modem7.github.io/Docker-NewYearCountdown/countdown.html&#xD;
+https://patrickgold.dev/newyear-countdown/countdown.html&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-11)</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/newyearcountdownclock_banner.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644539015</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8084</Config>
+</Container>
