@@ -15,12 +15,12 @@
 - Hiccup (v1.0)
 - Monitoror (v1.0)
 
-**Document Management Systems**
+**Document Management**
 - LogicalDOC-CE (v1.0)
 - Mayan-EDMS (v1.0)
 - OpenKM-CE (v1.0)
 
-**Document Management Systems (e-books)**
+**Document Management (e-books)**
 - Tanoshi (v1.0)
 
 **Feed Managers & Readers**
