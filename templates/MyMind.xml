@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MyMind</Name>
+  <Repository>modem7/my-mind</Repository>
+  <Registry>https://hub.docker.com/r/modem7/my-mind</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119906-support-smartphonelover-my-mind/</Support>
+  <Project>https://github.com/modem7/my-mind</Project>
+  <Overview>DESCRIPTION&#xD;
+My Mind is a web application for creating and managing Mind maps. It is free to use and it is distributed under the terms of the MIT license.&#xD;
+&#xD;
+Live demo:&#xD;
+https://my-mind.github.io/&#xD;
+https://my-mind.github.io/?url=examples%2Ffeatures.mymind&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-11)</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/mymind.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644579420</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
+</Container>

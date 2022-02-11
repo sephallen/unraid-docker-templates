@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>EtherCalc</Name>
+  <Repository>audreyt/ethercalc</Repository>
+  <Registry>https://hub.docker.com/r/audreyt/ethercalc</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119908-support-smartphonelover-ethercalc/</Support>
+  <Project>https://github.com/audreyt/ethercalc</Project>
+  <Overview>DESCRIPTION&#xD;
+EtherCalc is a web spreadsheet.&#xD;
+Your data is saved on the web, and people can edit the same document at the same time. Everybody's changes are instantly reflected on all screens.&#xD;
+Work together on inventories, survey forms, list management, brainstorming sessions and more!&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Redis server is not required, if you don't want it. Check 'https://github.com/audreyt/ethercalc#installation' to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-11)</Overview>
+  <Category>Cloud: Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/ethercalc.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644584028</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8084</Config>
+  <Config Name="REDIS_PORT_6379_TCP_ADDR" Target="REDIS_PORT_6379_TCP_ADDR" Default="" Mode="" Description="This is the Redis server IP. Delete that entry if not used." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="REDIS_PORT_6379_TCP_PORT" Target="REDIS_PORT_6379_TCP_PORT" Default="" Mode="" Description="This is the Redis server port. Delete that entry if not used." Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
