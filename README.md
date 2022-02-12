@@ -61,6 +61,7 @@
 
 **Media Downloaders**
 - AllTube-Download (v1.0)
+- MetaTube (v1.0)
 - Tartube (v1.0)
 - YouTube-DL (v1.0)
 
