@@ -2,6 +2,11 @@
 
 * * *
 
+**Backup Solution**
+- Rclone-Browser (v1.0)
+- Vorta (v1.2)
+- Vorta2 (v1.0)
+
 **Communication**
 - MailDev (v1.0)
 - Webmail-Lite-PHP (v1.0)
@@ -81,8 +86,6 @@
 - Portainer-CE (v1.0)
 - SQLite-Web (v1.0)
 - VLMCSD-KMS-Server (v1.0)
-- Vorta (v1.2)
-- Vorta2 (v1.0)
 - WhatsApp-Analyzer (v1.0)
 - WireGuard-Easy (v1.0)
 
