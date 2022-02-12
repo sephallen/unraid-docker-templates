@@ -20,7 +20,7 @@ VERSION&#xD;
   <Category>Backup: Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/rclone-browser.png</Icon>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/rclone_browser.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
