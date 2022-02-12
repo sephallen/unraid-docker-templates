@@ -60,6 +60,7 @@
 - HRConvert2 (v1.0)
 
 **Media Downloaders**
+- AllTube-Download (v1.0)
 - Tartube (v1.0)
 - YouTube-DL (v1.0)
 
