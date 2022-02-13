@@ -52,6 +52,7 @@
 
 **Games**
 - Wordle (v1.0)
+- Wordle2 (v1.0)
 
 **Knowledge Management**
 - MyMind (v1.0)
