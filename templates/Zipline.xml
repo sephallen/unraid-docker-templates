@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Zipline</Name>
+  <Repository>diced/zipline:trunk</Repository>
+  <Registry>https://hub.docker.com/r/diced/zipline</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/119995-support-smartphonelover-zipline/</Support>
+  <Project>https://github.com/diced/zipline</Project>
+  <Overview>DESCRIPTION&#xD;
+Zipline is a ShareX/file upload server that is easy to use, packed with features and can be setup in one command!&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; An external PostgreSQL database is required.&#xD;
+&#x2022; Default credentials: administrator/password (user/pass). If, for whatever reason, you can't access with default credentials, run the cmd 'yarn prisma migrate deploy' from container's terminal. Then, try again.&#xD;
+&#x2022; Zipline supports the use of an API to interact with. Check the documentation to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-02-13)</Overview>
+  <Category>Cloud: Productivity: Tools: Network:FTP</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/zipline.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1644778120</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>PostgreSQL (database)</Requires>
+  <Config Name="WebUI" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8095</Config>
+  <Config Name="Storage (uploads)" Target="/zipline/uploads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/zipline/uploads</Config>
+  <Config Name="Storage (public)" Target="/zipline/public" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/zipline/public</Config>
+  <Config Name="SECURE" Target="SECURE" Default="false|true" Mode="" Description="Whether or not to use https or not." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="SECRET" Target="SECRET" Default="" Mode="" Description="Key string used for securing HTTPs connection. Generate your own string." Type="Variable" Display="advanced" Required="true" Mask="true"/>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="Database URL." Type="Variable" Display="advanced" Required="true" Mask="false">postgresql://USER:PASS@HOST_IP:PORT/DB_NAME</Config>
+  <Config Name="UPLOADER_ROUTE" Target="UPLOADER_ROUTE" Default="" Mode="" Description="Which route uploads should be served on." Type="Variable" Display="advanced" Required="false" Mask="false">/u</Config>
+  <Config Name="UPLOADER_EMBED_ROUTE" Target="UPLOADER_EMBED_ROUTE" Default="" Mode="" Description="Which route embed routes should be accessed via." Type="Variable" Display="advanced" Required="false" Mask="false">/a</Config>
+  <Config Name="UPLOADER_LENGTH" Target="UPLOADER_LENGTH" Default="" Mode="" Description="Length of randomly generated characters for uploads." Type="Variable" Display="advanced" Required="false" Mask="false">6</Config>
+  <Config Name="UPLOADER_DIRECTORY" Target="UPLOADER_DIRECTORY" Default="" Mode="" Description="Which directory uploads should be stored to. (container's path)" Type="Variable" Display="advanced" Required="false" Mask="false">./uploads</Config>
+  <Config Name="UPLOADER_ADMIN_LIMIT" Target="UPLOADER_ADMIN_LIMIT" Default="" Mode="" Description="File size limit for administrators. (bytes)" Type="Variable" Display="advanced" Required="false" Mask="false">104900000</Config>
+  <Config Name="UPLOADER_USER_LIMIT" Target="UPLOADER_USER_LIMIT" Default="" Mode="" Description="File size limit for normal users. (bytes)" Type="Variable" Display="advanced" Required="false" Mask="false">104900000</Config>
+  <Config Name="UPLOADER_DISABLED_EXTS" Target="UPLOADER_DISABLED_EXTS" Default="" Mode="" Description="An array of disabled extensions to be blocked when uploading files. (comma separated)" Type="Variable" Display="advanced" Required="false" Mask="false">rar,zip</Config>
+  <Config Name="URLS_ROUTE" Target="URLS_ROUTE" Default="" Mode="" Description="Which route urls should be served on." Type="Variable" Display="advanced" Required="false" Mask="false">/go</Config>
+  <Config Name="URLS_LENGTH" Target="URLS_LENGTH" Default="" Mode="" Description="Length of randomly generated characters for urls." Type="Variable" Display="advanced" Required="false" Mask="false">6</Config>
+</Container>
