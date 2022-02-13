@@ -49,6 +49,7 @@
 - Simply-Shorten (v1.0)
 - Void (v1.0)
 - WebP-Server (v1.0)
+- Zipline (v1.0)
 
 **Games**
 - Wordle (v1.0)
