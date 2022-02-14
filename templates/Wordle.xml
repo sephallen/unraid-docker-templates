@@ -13,15 +13,15 @@
 This is a clone project of the popular word guessing game we all know and love, called: Wordle. Made using React, Typescript, and Tailwind.&#xD;
 &#xD;
 VERSION&#xD;
-1.0 (2022-02-11)</Overview>
+1.1 (2022-02-14)</Overview>
   <Category>GameServers: Productivity: Other:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Wordle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/wordle.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--no-healthcheck</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1644835150</DateInstalled>
+  <DateInstalled>1644835518</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
