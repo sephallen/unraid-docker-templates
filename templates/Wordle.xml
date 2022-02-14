@@ -12,21 +12,18 @@
   <Overview>DESCRIPTION&#xD;
 This is a clone project of the popular word guessing game we all know and love, called: Wordle. Made using React, Typescript, and Tailwind.&#xD;
 &#xD;
-Live demo:&#xD;
-https://reactle.vercel.app/&#xD;
-&#xD;
 VERSION&#xD;
 1.0 (2022-02-11)</Overview>
   <Category>GameServers: Productivity: Other:</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Wordle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/wordle.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1644535745</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1644835150</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
 </Container>
