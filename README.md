@@ -62,6 +62,7 @@
 
 **Media Downloaders**
 - AllTube-Download (v1.0)
+- aMule (v1.0)
 - eMule (v1.0)
 - MetaTube (v1.0)
 - Tartube (v1.0)
