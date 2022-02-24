@@ -54,6 +54,9 @@
 **Games**
 - Wordle (v1.1)
 
+**Human Resources Management (HRM)**
+- Admidio (v1.0)
+
 **Knowledge Management**
 - MyMind (v1.0)
 
