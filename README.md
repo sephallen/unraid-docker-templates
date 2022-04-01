@@ -4,7 +4,7 @@
 
 **Backup Solution**
 - Rclone-Browser (v1.0)
-- Vorta (v1.3)
+- Vorta (v1.4)
 
 **Communication**
 - MailDev (v1.0)
