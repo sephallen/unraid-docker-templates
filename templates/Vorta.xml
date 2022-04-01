@@ -29,8 +29,8 @@ VERSION&#xD;
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="5800" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
-  <Config Name="Backups (to)" Target="/destination" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Backups (from)" Target="/data" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups (to)" Target="/BKP_TO" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups (from)" Target="/BKP_FROM" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Storage (config)" Target="/config" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vorta</Config>
   <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
   <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="Default: 1028" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
