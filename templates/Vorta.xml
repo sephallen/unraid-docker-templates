@@ -16,7 +16,7 @@ NOTES&#xD;
 &#x2022; Thank you very much 'marklambert (Ranbato)' and 'scumbug' for contributing on creating the Vorta docker image. Now, being in the official borgbase repo.&#xD;
 &#xD;
 VERSION&#xD;
-1.3 (2022-02-28)</Overview>
+1.4 (2022-04-01)</Overview>
   <Category>Backup: Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Vorta2.xml</TemplateURL>
