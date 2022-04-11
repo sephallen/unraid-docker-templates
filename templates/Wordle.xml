@@ -15,7 +15,7 @@ This is a clone project of the popular word guessing game we all know and love, 
 VERSION&#xD;
 1.1 (2022-02-14)</Overview>
   <Category>GameServers: Productivity: Other:</Category>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Wordle.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/wordle.png</Icon>
   <ExtraParams>--no-healthcheck</ExtraParams>
@@ -25,5 +25,5 @@ VERSION&#xD;
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
-  <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8048</Config>
 </Container>
