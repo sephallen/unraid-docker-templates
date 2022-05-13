@@ -17,6 +17,7 @@
 
 **Dashboards**
 - Hiccup (v1.0)
+- Homarr (v1.0)
 - Monitoror (v1.0)
 
 **Document Management**
