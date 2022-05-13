@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Homarr</Name>
+  <Repository>ghcr.io/ajnart/homarr:latest</Repository>
+  <Registry>https://hub.docker.com/r/ajnart/homarr</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/123478-support-smartphonelover-homarr/</Support>
+  <Project>https://github.com/ajnart/homarr</Project>
+  <Overview>DESCRIPTION&#xD;
+Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.&#xD;
+&#xD;
+Live demo:&#xD;
+https://github.com/ajnart/homarr/deployments/activity_log?environment=Production&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; I decided to use the GitHub repo as the source for the images (container) in the template, as them are updated much faster than in DockerHub.&#xD;
+&#x2022; The default tag used in the template is 'latest', but you can use others if you want. Check the repo (images) to know them.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-05-14)&#xD;
+&#xD;
+THIS PROJECT IS IN EARLY DEVELOPMENT, SO EXPECT BUGS AND LACK OF FEATURES</Overview>
+  <Category>Tools: Network:Other Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:7575]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/SavageAUS/Unraid-Templates/master/homarr.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/homarr.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1652485858</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="7575" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7575</Config>
+  <Config Name="Storage (config)" Target="/app/data/configs" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homarr</Config>
+</Container>
