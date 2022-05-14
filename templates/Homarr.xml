@@ -16,7 +16,7 @@ Live demo:&#xD;
 https://github.com/ajnart/homarr/deployments/activity_log?environment=Production&#xD;
 &#xD;
 NOTES&#xD;
-&#x2022; I have changed from DockerHub to GitHub image source as per v1.4 changes done.&#xD;
+&#x2022; I have changed from DockerHub to GitHub image source as per in v0.1.4 changes done.&#xD;
 &#x2022; The default tag used in the template is 'latest', but you can use others if you want. Check the repo (images) to know them.&#xD;
 &#xD;
 VERSION&#xD;
