@@ -64,6 +64,7 @@
 
 **Media Converters & Editing**
 - HRConvert2 (v1.0)
+- tinyMediaManager (v1.0)
 
 **Media Downloaders**
 - AllTube-Download (v1.0)
