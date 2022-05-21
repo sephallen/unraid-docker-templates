@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tinyMediaManager</Name>
+  <Repository>tinymediamanager/tinymediamanager</Repository>
+  <Registry>https://hub.docker.com/r/tinymediamanager/tinymediamanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/123824-support-smartphonelover-tinymediamanager/</Support>
+  <Project>https://gitlab.com/tinyMediaManager/tinyMediaManager</Project>
+  <Overview>DESCRIPTION&#xD;
+tinyMediaManager is a full featured media manager to organize and clean up your media library. It is designed to allow you to create/view/edit the metadata, artwork and file structure for your media files used by Kodi (formerly XBMC), Plex, MediaPortal, Emby, Jellyfin and other compatible media center software.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-05-21)</Overview>
+  <Category>Productivity: Tools: MediaServer:Video MediaServer:Music</Category>
+  <WebUI>http://[IP]:[PORT:4000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Jellyfin.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/tinymediamanager.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1653143986</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
+  <Requires/>
+  <Config Name="WebUI" Target="4000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4000</Config>
+  <Config Name="Storage (movies)" Target="/media/movies" Default="" Mode="rw" Description="This is the location for you Movies." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="Storage (tv shows)" Target="/media/tvshows" Default="" Mode="rw" Description="This is the location your TV Shows." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/</Config>
+  <Config Name="Storage (data)" Target="/data" Default="" Mode="rw" Description="This is the location for the internal data, like: logs, cache, backups, etc." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/tinymediamanager</Config>
+  <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="GROUP_ID" Target="GROUP_ID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">unRAID</Config>
+</Container>
