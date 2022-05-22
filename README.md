@@ -43,7 +43,7 @@
 - imgpush (v1.0)
 - Jirafeau (v1.0)
 - Linx-Server (v1.0)
-- Pelik (v1.0)
+- Pelik (v1.1)
 - Quickshare (v1.0)
 - RustyPaste (v1.0)
 - Sharry (v1.0)
