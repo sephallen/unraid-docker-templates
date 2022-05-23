@@ -15,19 +15,23 @@ Openbooks allows you to download ebooks from irc.irchighway.net quickly and easi
 NOTES&#xD;
 &#x2022; If you want to set a custom name when connecting to irchighway (recommended), add the following into the 'Post Arguments' field: --name user_name.&#xD;
 &#x2022; The minimum limit is 1 search per 10 seconds but this can be configured for a higher value via the '--rate-limit' flag within 'Post Arguments' field.&#xD;
+&#x2022; If you want to get persistent logs for debugging, add the following into the 'Post Arguments' field: --logs. The logs will be available in '/appdata/openbooks/logs'.&#xD;
+&#x2022; All downloaded files are created as 'root' user, so if you face problems when accessing them, you can create a little script that modifies the permissions and owner, recursively. Use the 'User Scripts' plugin to automate it.&#xD;
 &#xD;
 VERSION&#xD;
-1.0 (2022-01-01)</Overview>
-  <Category>Downloaders: Tools: MediaApp:Books MediaServer:Books</Category>
+1.1 (2022-05-23)&#xD;
+&#xD;
+THIS IMAGE STILL HAS SOME BUGS, SO EXPECT FAILURES OF ANY KIND ON SENDING DOWNLOAD REQUESTS</Overview>
+  <Category>Downloaders: Tools:Utilities MediaApp:Books MediaServer:Books</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/OpenBooks.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/openbooks.png</Icon>
   <ExtraParams/>
-  <PostArgs>--persist</PostArgs>
+  <PostArgs>--name unRAIDER_Books --persist</PostArgs>
   <CPUset/>
-  <DateInstalled>1641072564</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1653331321</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8035</Config>
   <Config Name="Storage (books)" Target="/books" Default="" Mode="rw" Description="Location for downloaded books." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/openbooks/</Config>
