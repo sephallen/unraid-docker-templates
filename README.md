@@ -91,7 +91,7 @@
 - GIMP-Desktop-G3 (v1.0)
 - Inkscape-Desktop-G3 (v1.0)
 - NewYearCountdownClock (v1.0)
-- OpenBooks (v1.0)
+- OpenBooks (v1.1)
 - OpenGL-Desktop-G3 (v1.0)
 - Portainer-Agent (v1.0)
 - Portainer-CE (v1.0)
