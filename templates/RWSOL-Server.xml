@@ -31,7 +31,7 @@ VERSION&#xD;
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires>- Sleep-On-LAN (SOL) software is needed on the client, if using sleep function.</Requires>
   <Config Name="WebUI" Target="9546" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9546</Config>
-  <Config Name="RWSOLS_COMPUTER_NAME" Target="RWSOLS_COMPUTER_NAME" Default="" Mode="" Description="The name of the device." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RWSOLS_COMPUTER_NAME" Target="RWSOLS_COMPUTER_NAME" Default="" Mode="" Description="The name of the device, without spaces on its name. (ie.: 'unRAID-Server', not 'unRAID Server')" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="RWSOLS_COMPUTER_MAC" Target="RWSOLS_COMPUTER_MAC" Default="" Mode="" Description="The MAC of the device." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="RWSOLS_COMPUTER_IP" Target="RWSOLS_COMPUTER_IP" Default="" Mode="" Description="The IP (local) of the device." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="APACHE2_PORT" Target="APACHE2_PORT" Default="" Mode="" Description="This is the internal port of the WebUI." Type="Variable" Display="advanced" Required="false" Mask="false">8080</Config>
