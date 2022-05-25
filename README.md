@@ -95,6 +95,7 @@
 - OpenGL-Desktop-G3 (v1.0)
 - Portainer-Agent (v1.0)
 - Portainer-CE (v1.0)
+- RWSOL-Server (v1.0)
 - SQLite-Web (v1.0)
 - VLMCSD-KMS-Server (v1.0)
 - WhatsApp-Analyzer (v1.0)
