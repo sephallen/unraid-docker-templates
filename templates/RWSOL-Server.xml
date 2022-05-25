@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>RWSOL-Server</Name>
+  <Repository>ex0nuss/remote-wake-sleep-on-lan-docker</Repository>
+  <Registry>https://hub.docker.com/r/ex0nuss/remote-wake-sleep-on-lan-docker</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/124030-support-smartphonelover-remote-wakesleep-on-lan-server/</Support>
+  <Project>https://github.com/ex0nuss/Remote-Wake-Sleep-On-LAN-Docker</Project>
+  <Overview>DESCRIPTION&#xD;
+The Remote Wake/Sleep-On-LAN Server (RWSOLS) is a simple webapp to remotely power up (wake) and power down (sleep) any supported device via WOL/SOL protocol.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; If you want to use the 'SLEEP' function, additional software will be needed on the client: 'Sleep-On-LAN (SOL)'. A button to sleep the device will be shown, instead of wake device, when corresponding variables are set accordingly. Both 'wake' and 'sleep' options will be shown in the web interface according to the current state of the device.&#xD;
+&#x2022; The values of Name, MAC and IP variables (RWSOLS_COMPUTER) must be intered in the following format: "xxx","xxx".&#xD;
+&#x2022; There are other variables that you can use, if needed. Check the GitHub repo to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-05-25)</Overview>
+  <Category>Tools: Network:Management Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Jellyfin.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/rwsol-server.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1653513247</DateInstalled>
+  <DonateText>If you like my work, please consider making a little donation.</DonateText>
+  <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
+  <Requires>- Sleep-On-LAN (SOL) software is needed on the client, if using sleep function.</Requires>
+  <Config Name="WebUI" Target="9546" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">9546</Config>
+  <Config Name="RWSOLS_COMPUTER_NAME" Target="RWSOLS_COMPUTER_NAME" Default="" Mode="" Description="The name of the device." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RWSOLS_COMPUTER_MAC" Target="RWSOLS_COMPUTER_MAC" Default="" Mode="" Description="The MAC of the device." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="RWSOLS_COMPUTER_IP" Target="RWSOLS_COMPUTER_IP" Default="" Mode="" Description="The IP (local) of the device." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="APACHE2_PORT" Target="APACHE2_PORT" Default="" Mode="" Description="This is the internal port of the WebUI." Type="Variable" Display="advanced" Required="false" Mask="false">8080</Config>
+</Container>
