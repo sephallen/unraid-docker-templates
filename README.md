@@ -101,6 +101,10 @@
 - WhatsApp-Analyzer (v1.0)
 - WireGuard-Easy (v1.0)
 
+**Money and Budgeting Management**
+- Firefly-III (v1.0)
+- Firefly-III-Importer (v1.0)
+
 **Note-Taking & Editors**
 - DailyTxT (v1.0)
 - MiniNote (1.0)
