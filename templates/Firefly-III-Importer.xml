@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Firefly-III-Importer</Name>
+  <Repository>fireflyiii/data-importer:latest</Repository>
+  <Registry>https://hub.docker.com/r/fireflyiii/data-importer</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/firefly-iii/data-importer</Project>
+  <Overview>DESCRIPTION&#xD;
+The Data Importer helps you to import transactions into Firefly III. It is separated from Firefly III for security and maintenance reasons.&#xD;
+&#xD;
+The Data Importer does not connect to your bank directly. Instead, it uses Nordigen and SaltEdge to connect to over 6000 banks worldwide. These services are free for Firefly III users, but require registration. Keep in mind these services have their own privacy and data usage policies.&#xD;
+&#xD;
+The Data Importer can import CSV files you've downloaded from your bank.&#xD;
+You can run the Data Importer once, for a bulk import. You can also run it regularly to keep up with new transactions.&#xD;
+&#xD;
+NOTES&#xD;
+&#x2022; Available tags for this docker image: 'latest' (stable) and 'develop'.&#xD;
+&#x2022; To generate your token, go to: Firefly III &amp;gt; Options &amp;gt; Profile &amp;gt; OAuth &amp;gt; 'Personal Access Tokens'.&#xD;
+&#x2022; There are other variables that you can use, if needed. Check the '.env.example' file of the GitHub repo to know more.&#xD;
+&#x2022; When setting both 'FIREFLY_III_URL' and/or 'VANITY_URL', make sure to add 'http://' or 'https://', even if in local, and remove any trailing slash at the end of it.&#xD;
+&#x2022; Use the 'Reauthenticate' button if you have re-generated your token, or if you may suffer any other issue while trying to connect to Firefly.&#xD;
+&#x2022; Memcached and Redis are not required, but you can connect them to Firefly III Data Importer if you experience any performance issues. Check the '.env.example' file of the GitHub repo to know more.&#xD;
+&#xD;
+VERSION&#xD;
+1.0 (2022-05-28)</Overview>
+  <Category>Crypto: Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/firefly-iii-data-importer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1653751896</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>- Firefly III instance</Requires>
+  <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4576</Config>
+  <Config Name="FIREFLY_III_URL" Target="FIREFLY_III_URL" Default="" Mode="" Description="This is the address of the Firefly III instance, it can be HTTP or HTTPS." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="VANITY_URL" Target="VANITY_URL" Default="" Mode="" Description="This is a fallback address for the Firefly III instance, it can be HTTP or HTTPS." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="FIREFLY_III_ACCESS_TOKEN" Target="FIREFLY_III_ACCESS_TOKEN" Default="" Mode="" Description="This is your Personal Access Token, generated from your Firefly III account." Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Storage (uploads)" Target="/var/www/html/storage/upload" Default="" Mode="rw" Description="This is the location for the uploaded files." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/firefly-importer/uploads</Config>
+  <Config Name="APP_NAME" Target="APP_NAME" Default="" Mode="" Description="This is the app name (browser's tab)." Type="Variable" Display="advanced" Required="false" Mask="false">Firefly III Data Importer</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="emergency|alert|critical|error|warning|notice|info|debug" Mode="" Description="This is the log level." Type="Variable" Display="advanced" Required="false" Mask="false">emergency</Config>
+  <Config Name="IGNORE_DUPLICATE_ERRORS" Target="IGNORE_DUPLICATE_ERRORS" Default="false|true" Mode="" Description="Ignore duplicate transactions while importing." Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
+</Container>
