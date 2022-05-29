@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/124146-support-smartphonelover-firefly-iii-data-importer/</Support>
   <Project>https://github.com/firefly-iii/data-importer</Project>
   <Overview>DESCRIPTION&#xD;
 The Data Importer helps you to import transactions into Firefly III. It is separated from Firefly III for security and maintenance reasons.&#xD;
