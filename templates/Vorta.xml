@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Vorta</Name>
   <Repository>ghcr.io/borgbase/vorta-docker</Repository>
-  <Registry/>
+  <Registry>https://ghcr.io/borgbase/vorta-docker</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
@@ -13,26 +13,32 @@
 This is a docker template for Vorta (GUI for Borg Backup), a backup client for macOS and Linux desktops. It integrates the mighty BorgBackup with your desktop environment to protect your data from disk failure, ransomware and theft.&#xD;
 &#xD;
 NOTES&#xD;
+&#x2022; There are other variables available, if neded. Check the GitHub repo to know more.&#xD;
+&#x2022; The dirs needed to interact with the host and/or any external device, is located on '/data' (bkp_to, bkp_from) in the root of the container.&#xD;
 &#x2022; Thank you very much 'marklambert (Ranbato)' and 'scumbug' for contributing on creating the Vorta docker image. Now, being in the official borgbase repo.&#xD;
 &#xD;
 VERSION&#xD;
-1.4 (2022-04-01)</Overview>
-  <Category>Backup: Tools:</Category>
+1.5 (2022-05-31)</Overview>
+  <Category>Backup: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:5800]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Vorta2.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Vorta.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/vorta_200x200.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1646043656</DateInstalled>
+  <DateInstalled>1653950647</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="5800" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5800</Config>
-  <Config Name="Backups (to)" Target="/BKP_TO" Default="" Mode="rw" Description="Specify the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Backups (from)" Target="/BKP_FROM" Default="" Mode="ro" Description="Specify the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups (to)" Target="/data/bkp_to" Default="" Mode="rw" Description="This is the location for backups (destination)." Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backups (from)" Target="/data/bkp_from" Default="" Mode="ro" Description="This is the location for backups (source)." Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Storage (config)" Target="/config" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vorta</Config>
-  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
+  <Config Name="APP_NAME" Target="APP_NAME" Default="" Mode="" Description="This is the title of the browser's tab." Type="Variable" Display="advanced" Required="false" Mask="false">Vorta</Config>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">Europe/Madrid</Config>
+  <Config Name="SECURE_CONNECTION" Target="SECURE_CONNECTION" Default="0|1" Mode="" Description="Use an encrypted connection to access the application's GUI (HTTPS)." Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="VNC_PASSWORD" Target="VNC_PASSWORD" Default="" Mode="" Description="Password to connect to the application's GUI. (leave it blank to access without a password)" Type="Variable" Display="advanced" Required="false" Mask="true"/>
   <Config Name="USER_ID" Target="USER_ID" Default="" Mode="" Description="Default: 1028" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="GROUP_ID" Target="GROUP_ID" Default="" Mode="" Description="Default: 100" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
