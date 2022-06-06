@@ -13,16 +13,14 @@
 Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.&#xD;
 &#xD;
 Live demo:&#xD;
-https://github.com/ajnart/homarr/deployments/activity_log?environment=Production&#xD;
+https://homarr.ajnart.fr/&#xD;
 &#xD;
 NOTES&#xD;
-&#x2022; I have changed from DockerHub to GitHub image source as per in v0.1.4 changes done.&#xD;
-&#x2022; The default tag used in the template is 'latest', but you can use others if you want. Check the repo (images) to know them.&#xD;
+&#x2022; The available tags to be used for this image, are: 'latest' (recommended) and 'dev'.&#xD;
+&#x2022; If you want to use your own icons (png/svg), place them in the configured directory of 'Storage (icons)'. Then, call them from Homarr URL field as '/icons/my_icon.ext'.&#xD;
 &#xD;
 VERSION&#xD;
-1.1 (2022-05-24)&#xD;
-&#xD;
-THIS PROJECT IS IN EARLY DEVELOPMENT, SO EXPECT BUGS AND LACK OF FEATURES</Overview>
+1.2 (2022-06-06)</Overview>
   <Category>Tools:Utilities Network:Other</Category>
   <WebUI>http://[IP]:[PORT:7575]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/master/templates/Homarr.xml</TemplateURL>
@@ -30,11 +28,12 @@ THIS PROJECT IS IN EARLY DEVELOPMENT, SO EXPECT BUGS AND LACK OF FEATURES</Overv
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1653420127</DateInstalled>
+  <DateInstalled>1654515503</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="7575" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7575</Config>
-  <Config Name="Storage (config)" Target="/app/data/configs" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homarr</Config>
+  <Config Name="Storage (config)" Target="/app/data/configs" Default="" Mode="rw" Description="This is the location for the internal data." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homarr/configs</Config>
+  <Config Name="Storage (icons)" Target="/app/public/icons" Default="" Mode="rw" Description="This is the location for custom icons." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/homarr/icons</Config>
   <Config Name="PORT" Target="PORT" Default="" Mode="" Description="If you need, you can customize the internal port using this variable." Type="Variable" Display="advanced" Required="false" Mask="false">7575</Config>
 </Container>
