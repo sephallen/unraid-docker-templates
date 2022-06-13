@@ -18,7 +18,7 @@
 **Dashboards**
 - Dashdot (v1.0)
 - Hiccup (v1.0)
-- Homarr (v1.2)
+- Homarr (v1.3)
 - Monitoror (v1.0)
 
 **Document Management**
