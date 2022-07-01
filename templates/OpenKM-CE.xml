@@ -18,6 +18,7 @@ The CE version of OpenKM doesn't have any trial period or something similar. It'
 &#xD;
 NOTES&#xD;
 &#x2022; The default credentials are: okmAdmin/admin (Administrator).&#xD;
+&#x2022; Run the following cmds before building the container: 'mkdir /mnt/user/appdata/openkm-ce', 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/openkm-ce/OpenKM.cfg --output /mnt/user/appdata/openkm-ce/OpenKM.cfg', 'curl https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/dependencies/openkm-ce/server.xml --output /mnt/user/appdata/openkm-ce/server.xml'.&#xD;
 &#x2022; It's highly recommended to configure a static docker tag, as manual backup/restoration is required when upgrading to a newer version.&#xD;
 &#x2022; To use OpenKM in dev mode, leave the template as it is. No configuration is required (embedded db used).&#xD;
 &#x2022; Make sure to read the official doc carefully before installing it for production. Specially, database configuration and data migration (backup/restore) sections.&#xD;
@@ -34,7 +35,7 @@ VERSION&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1656699797</DateInstalled>
+  <DateInstalled>1656700803</DateInstalled>
   <DonateText>If you like my work, please consider making a little donation.</DonateText>
   <DonateLink>https://github.com/SmartPhoneLover/unraid-docker-templates/blob/main/DONATION.md</DonateLink>
   <Requires>- External database (MySQL, PostgreSQL...)</Requires>
