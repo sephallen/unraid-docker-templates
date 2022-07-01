@@ -22,10 +22,29 @@
               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
               pathname="conf/tomcat-users.xml" />
 
+    <!-- Supported Database Drivers:
+         org.h2.Driver
+         oracle.jdbc.driver.OracleDriver
+         com.microsoft.sqlserver.jdbc.SQLServerDriver
+         org.postgresql.Driver
+         com.mysql.jdbc.Driver
+         org.mariadb.jdbc.Driver
+    -->
+
+    <!-- Supported Database URLs:
+         jdbc:h2:/opt/tomcat/okmdb
+         jdbc:oracle:thin:@DB_HOST:DB_PORT:DB_NAME
+         jdbc:oracle:thin:@DB_HOST:DB_PORT/SERVICE_NAME
+         jdbc:sqlserver://DB_HOST:DB_PORT;databaseName=DB_NAME
+         jdbc:postgresql://DB_HOST:DB_PORT/DB_NAME
+         jdbc:mysql://DB_HOST:DB_PORT/DB_NAME?useSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC
+         jdbc:mariadb://DB_HOST:DB_PORT/DB_NAME?useSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC
+    -->
+
     <Resource name="jdbc/OpenKMDS" auth="Container" type="javax.sql.DataSource"
             maxTotal="100" maxIdle="30" maxWaitMillis="10000" validationQuery="select 1"
-            username="openkm" password="openkm" driverClassName="com.mysql.cj.jdbc.Driver"
-            url="jdbc:mysql://mysql:3306/okmdb?useSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+            username="openkm" password="openkm" driverClassName="org.mariadb.jdbc.Driver"
+            url="jdbc:mariadb://192.168.1.120:3310/openkm?useSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
 
     <Resource name="mail/OpenKM" auth="Container" type="javax.mail.Session"
               mail.smtp.host="localhost" mail.from="noreply@openkm.com"/>
