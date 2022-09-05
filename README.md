@@ -117,7 +117,7 @@
 - Rustpad (v1.0)
 
 **Password Managers**
-- 2FAuth (v1.0)
+- 2FAuth (v1.1)
 - KeeWeb (v1.0)
 - Passbolt-CE (v1.0)
 - Passbolt-PRO (v1.0)
