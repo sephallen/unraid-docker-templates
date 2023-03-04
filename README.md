@@ -16,7 +16,7 @@
 - Monero-NODE (v1.0)
 
 **Dashboards**
-- Dashdot (v1.0)
+- Dashdot (v1.2)
 - Hiccup (v1.0)
 - Homarr (v1.5)
 - Monitoror (v1.0)
