@@ -4,27 +4,29 @@
   <Repository>maildev/maildev</Repository>
   <Registry>https://hub.docker.com/r/maildev/maildev</Registry>
   <Network>bridge</Network>
-  <MyIP/>
+  <MyIP />
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/116778-support-smartphonelover-maildev/</Support>
   <Project>https://github.com/maildev/maildev</Project>
-  <Overview>DESCRIPTION&#xD;
-MailDev is a simple way to test your project's generated emails during development with an easy to use web interface that runs on your machine built on top of Node.js.&#xD;
-&#xD;
-VERSION&#xD;
-1.0 (2021-12-03)</Overview>
+  <Overview>MailDev is a simple way to test your project's generated emails during development with
+    an easy to use web interface that runs on your machine. Built on top of Node.js.</Overview>
   <Category>Cloud: Productivity: Network:Web Network:Messenger</Category>
-  <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/maildev_200x200.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
+  <WebUI>http://[IP]:[PORT:1080]</WebUI>
+  <TemplateURL />
+  <Icon>
+    https://raw.githubusercontent.com/SmartPhoneLover/unraid-docker-templates/main/templates/icons/maildev_200x200.png</Icon>
+  <ExtraParams />
+  <PostArgs />
+  <CPUset />
   <DateInstalled>1638547100</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Requires/>
-  <Config Name="Port (WebUI)" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1080</Config>
-  <Config Name="Port (SMTP)" Target="25" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1025</Config>
+  <DonateText />
+  <DonateLink />
+  <Requires />
+  <Config Name="Port (WebUI)" Target="1080" Default="1080" Mode="tcp"
+    Description="Port to run the Web GUI" Type="Port"
+    Display="always" Required="false" Mask="false">1080</Config>
+  <Config Name="Port (SMTP)" Target="1025" Default="1025" Mode="tcp"
+    Description="SMTP port to catch emails" Type="Port"
+    Display="always" Required="false" Mask="false">1025</Config>
 </Container>
